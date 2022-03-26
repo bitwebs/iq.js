@@ -83,7 +83,7 @@
     "webpack-cli": "^4.3.0"
   },
   "dependencies": {
-    "@web4/iq.proto": "^0.1.7",
+    "@web4/iq.proto": "^0.0.1",
     "axios": "^0.24.0",
     "bech32": "^2.0.0",
     "bip32": "^2.0.6",
