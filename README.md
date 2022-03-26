@@ -1,18 +1,18 @@
 <p>&nbsp;</p>
 <p align="center">
-<img src="https://raw.githubusercontent.com/terra-money/iq.js/master/img/terrajs.svg" width=500>
+<img src="https://raw.githubusercontent.com/bitwebs/iq.js/master/img/terrajs.svg" width=500>
 </p>
 
 <p align="center">
 The JavaScript SDK for Terra
 </p>
 
-![diagram](https://raw.githubusercontent.com/terra-money/iq.js/master/img/terrajs-diagram.png)
+![diagram](https://raw.githubusercontent.com/bitwebs/iq.js/master/img/terrajs-diagram.png)
 
 <br/>
 
 <p align="center">
-  <img alt="GitHub" src="https://img.shields.io/github/license/terra-money/iq.js">
+  <img alt="GitHub" src="https://img.shields.io/github/license/bitwebs/iq.js">
   <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@web4/iq.js">
 </p>
 
@@ -22,11 +22,11 @@ The JavaScript SDK for Terra
   <br/>
   <a href="https://docs.terra.money/docs/develop/sdks/terra-js/common-examples.html">Examples</a>
   ·
-  <a href="https://terra-money.github.io/iq.js/">API Reference</a>
+  <a href="https://bitwebs.github.io/iq.js/">API Reference</a>
   ·
   <a href="https://www.npmjs.com/package/@web4/iq.js">NPM Package</a>
   ·
-  <a href="https://github.com/terra-money/iq.js">GitHub</a>
+  <a href="https://github.com/bitwebs/iq.js">GitHub</a>
 </p>
 
 Terra.js a JavaScript SDK for writing applications that interact with the Terra blockchain from either Node.js, browser, or React Native environments and provides simple abstractions over core data structures, serialization, key management, and API request generation.
@@ -79,7 +79,7 @@ terra.market.swapRate(offerCoin, 'ukrw').then(c => {
 
 ### Broadcasting transactions
 
-First, [get](https://faucet.terra.money/) some testnet tokens for `terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v`, or use [LocalTerra](https://www.github.com/terra-money/LocalTerra).
+First, [get](https://faucet.terra.money/) some testnet tokens for `terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v`, or use [LocalTerra](https://www.github.com/bitwebs/LocalTerra).
 
 ```ts
 import { LCDClient, MsgSend, MnemonicKey } from '@web4/iq.js';
