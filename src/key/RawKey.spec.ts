@@ -22,7 +22,7 @@ describe('RawKey', () => {
       },
       {
         mnemonic:
-          'speak scatter present rice cattle sight amateur novel dizzy wheel cannon mango model sunset smooth appear impose want biqr tattoo theme zero misery flower',
+          'speak scatter present rice cattle sight amatbeur novel dizzy wheel cannon mango model sunset smooth appear impose want biqr tattoo theme zero misery flower',
         publicKey: new SimplePublicKey(
           'A3rCe3YxpfO1tN4t5eUnGM293FCK4PQOcf9wJsoLXpi5'
         ),
@@ -61,7 +61,7 @@ describe('RawKey', () => {
 
     const fee = new Fee(46467, new Coins({ ubiq: '698' }));
     const signDoc = new SignDoc(
-      'columbus-3-testnet',
+      'swartz-3-testnet',
       45,
       0,
       new AuthInfo([], fee),

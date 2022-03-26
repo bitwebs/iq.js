@@ -7,7 +7,7 @@ describe('PolicyConstraints', () => {
     const pc = new PolicyConstraints(
       Dec.withPrec(5, 4),
       Dec.withPrec(1, 2),
-      new Coin('bubsdr', 1),
+      new Coin('ubsdr', 1),
       Dec.withPrec(25, 5)
     );
 

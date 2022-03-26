@@ -5,11 +5,11 @@
       "exchange_rate": "8.099497011452464082"
     },
     {
-      "denom": "ucad",
+      "denom": "ubcad",
       "exchange_rate": "7.577173472450800448"
     },
     {
-      "denom": "uchf",
+      "denom": "ubchf",
       "exchange_rate": "5.606272651951189670"
     },
     {
@@ -21,7 +21,7 @@
       "exchange_rate": "38.241047368775133511"
     },
     {
-      "denom": "ueur",
+      "denom": "ubeur",
       "exchange_rate": "5.139663623776370157"
     },
     {
@@ -33,7 +33,7 @@
       "exchange_rate": "47.879657741819166432"
     },
     {
-      "denom": "uinr",
+      "denom": "ubinr",
       "exchange_rate": "455.278089535410089886"
     },
     {
@@ -53,7 +53,7 @@
       "exchange_rate": "52.260211155579785444"
     },
     {
-      "denom": "bubsdr",
+      "denom": "ubsdr",
       "exchange_rate": "4.283053019813641797"
     },
     {

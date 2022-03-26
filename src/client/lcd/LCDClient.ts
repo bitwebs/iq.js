@@ -72,7 +72,7 @@ const DEFAULT_GAS_PRICES_BY_CHAIN_ID: { [key: string]: Coins.Input } = {
  *
  * const iq = new LCDClient({
  *    URL: "https://lcd.iqchain.network",
- *    chainID: "columbus-3"
+ *    chainID: "swartz-3"
  * });
  *
  * iq.market.swapRate(new Coin('ubiq', 10000), 'ubkrw').then(c => console.log(c.toString()));

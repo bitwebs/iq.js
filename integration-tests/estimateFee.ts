@@ -11,13 +11,13 @@ async function main() {
     'https://mcafee-1.iqchain.network/v1/txs/gas_prices'
   );
 
-  const columbus = new LCDClient({
+  const swartz = new LCDClient({
     chainID: 'swartz-1',
     URL: 'https://lcd.iqchain.network',
     gasPrices,
   });
 
-  const accountInfo = await columbus.auth.accountInfo(
+  const accountInfo = await swartz.auth.accountInfo(
     'iq1zsky63r58vc7dfn3ljj32ch6fyn4e5qd8skzyz'
   );
 
@@ -37,7 +37,7 @@ async function main() {
     gasAdjustment: 1.75,
   };
   // Test raw estimate fee function with specified gas
-  const rawFee = await columbus.tx.estimateFee(
+  const rawFee = await swartz.tx.estimateFee(
     [
       {
         sequenceNumber: accountInfo.getSequenceNumber(),

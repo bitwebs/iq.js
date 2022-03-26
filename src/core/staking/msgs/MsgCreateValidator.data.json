@@ -9,7 +9,7 @@
         "height": "4096009",
         "txhash": "F8B388BFA0458CFA5EB65AE74D2698AA4C18FD4B54F0850E9ED822998F2B756E",
         "data": "0A2C0A2A2F636F736D6F732E7374616B696E672E763162657461312E4D736743726561746556616C696461746F72",
-        "raw_log": "[{\"events\":[{\"type\":\"coin_received\",\"attributes\":[{\"key\":\"receiver\",\"value\":\"iq1tygms3xhhs3yv487phx3dw4a95jn7t7l8l07dr\"},{\"key\":\"amount\",\"value\":\"10000000ubiq\"}]},{\"type\":\"coin_spent\",\"attributes\":[{\"key\":\"spender\",\"value\":\"iq1r2kcrnsq8jfu5zyeyqygrj80x6chf82ae50ed5\"},{\"key\":\"amount\",\"value\":\"10000000ubiq\"}]},{\"type\":\"create_validator\",\"attributes\":[{\"key\":\"validator\",\"value\":\"iqvaloper1r2kcrnsq8jfu5zyeyqygrj80x6chf82aemrya8\"},{\"key\":\"amount\",\"value\":\"10000000\"}]},{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"/cosmos.staking.v1beta1.MsgCreateValidator\"},{\"key\":\"module\",\"value\":\"staking\"},{\"key\":\"sender\",\"value\":\"iq1r2kcrnsq8jfu5zyeyqygrj80x6chf82ae50ed5\"}]}]}]",
+        "raw_log": "[{\"events\":[{\"type\":\"coin_received\",\"attributes\":[{\"key\":\"receiver\",\"value\":\"iq1tygms3xhhs3yv487phx3dw4a95jn7t7l8l07dr\"},{\"key\":\"amount\",\"value\":\"10000000ubiq\"}]},{\"type\":\"coin_spent\",\"attributes\":[{\"key\":\"spender\",\"value\":\"iq1r2kcrnsq8jfu5zyeyqygrj80x6bchf82ae50ed5\"},{\"key\":\"amount\",\"value\":\"10000000ubiq\"}]},{\"type\":\"create_validator\",\"attributes\":[{\"key\":\"validator\",\"value\":\"iqvaloper1r2kcrnsq8jfu5zyeyqygrj80x6bchf82aemrya8\"},{\"key\":\"amount\",\"value\":\"10000000\"}]},{\"type\":\"message\",\"attributes\":[{\"key\":\"action\",\"value\":\"/cosmos.staking.v1beta1.MsgCreateValidator\"},{\"key\":\"module\",\"value\":\"staking\"},{\"key\":\"sender\",\"value\":\"iq1r2kcrnsq8jfu5zyeyqygrj80x6bchf82ae50ed5\"}]}]}]",
         "logs": [
           {
             "events": [
@@ -31,7 +31,7 @@
                 "attributes": [
                   {
                     "key": "spender",
-                    "value": "iq1r2kcrnsq8jfu5zyeyqygrj80x6chf82ae50ed5"
+                    "value": "iq1r2kcrnsq8jfu5zyeyqygrj80x6bchf82ae50ed5"
                   },
                   {
                     "key": "amount",
@@ -44,7 +44,7 @@
                 "attributes": [
                   {
                     "key": "validator",
-                    "value": "iqvaloper1r2kcrnsq8jfu5zyeyqygrj80x6chf82aemrya8"
+                    "value": "iqvaloper1r2kcrnsq8jfu5zyeyqygrj80x6bchf82aemrya8"
                   },
                   {
                     "key": "amount",
@@ -65,7 +65,7 @@
                   },
                   {
                     "key": "sender",
-                    "value": "iq1r2kcrnsq8jfu5zyeyqygrj80x6chf82ae50ed5"
+                    "value": "iq1r2kcrnsq8jfu5zyeyqygrj80x6bchf82ae50ed5"
                   }
                 ]
               }
@@ -90,8 +90,8 @@
                     "max_change_rate": "0.010000000000000000"
                   },
                   "min_self_delegation": "1",
-                  "delegator_address": "iq1r2kcrnsq8jfu5zyeyqygrj80x6chf82ae50ed5",
-                  "validator_address": "iqvaloper1r2kcrnsq8jfu5zyeyqygrj80x6chf82aemrya8",
+                  "delegator_address": "iq1r2kcrnsq8jfu5zyeyqygrj80x6bchf82ae50ed5",
+                  "validator_address": "iqvaloper1r2kcrnsq8jfu5zyeyqygrj80x6bchf82aemrya8",
                   "pubkey": {
                     "type": "tendermint/PubKeyEd25519",
                     "value": "b8RizVY2WHFTHLU/8HVaJApMAw5bhvdNuJtXPVAS5LA="

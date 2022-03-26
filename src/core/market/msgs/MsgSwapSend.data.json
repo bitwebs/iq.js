@@ -203,7 +203,7 @@
             "type": "swap",
             "attributes": [{
                 "key": "offer",
-                "value": "20000000000000bubsdr"
+                "value": "20000000000000ubsdr"
               },
               {
                 "key": "trader",
@@ -227,7 +227,7 @@
               },
               {
                 "key": "amount",
-                "value": "20000000000000bubsdr"
+                "value": "20000000000000ubsdr"
               },
               {
                 "key": "recipient",
@@ -252,7 +252,7 @@
               "from_address": "iq1zh3vg5zegqn78xpckm78etueye4adl0ckpku44",
               "to_address": "iq1gwsn3fwxf0qwmpda7ujjdzsxj5a446rgwwntl3",
               "offer_coin": {
-                "denom": "bubsdr",
+                "denom": "ubsdr",
                 "amount": "20000000000000"
               },
               "ask_denom": "ubkrw"
@@ -260,7 +260,7 @@
           }],
           "fee": {
             "amount": [{
-              "denom": "bubsdr",
+              "denom": "ubsdr",
               "amount": "2218"
             }],
             "gas": "147866"
@@ -300,7 +300,7 @@
           "type": "swap",
           "attributes": [{
               "key": "offer",
-              "value": "20000000000000bubsdr"
+              "value": "20000000000000ubsdr"
             },
             {
               "key": "trader",
@@ -324,7 +324,7 @@
             },
             {
               "key": "amount",
-              "value": "20000000000000bubsdr"
+              "value": "20000000000000ubsdr"
             },
             {
               "key": "recipient",
@@ -704,7 +704,7 @@
             "type": "swap",
             "attributes": [{
                 "key": "offer",
-                "value": "1350147bubsdr"
+                "value": "1350147ubsdr"
               },
               {
                 "key": "trader",
@@ -728,7 +728,7 @@
               },
               {
                 "key": "amount",
-                "value": "1350147bubsdr"
+                "value": "1350147ubsdr"
               },
               {
                 "key": "recipient",
@@ -753,7 +753,7 @@
               "from_address": "iq1zh3vg5zegqn78xpckm78etueye4adl0ckpku44",
               "to_address": "iq1gwsn3fwxf0qwmpda7ujjdzsxj5a446rgwwntl3",
               "offer_coin": {
-                "denom": "bubsdr",
+                "denom": "ubsdr",
                 "amount": "1350147"
               },
               "ask_denom": "ubiq"
@@ -801,7 +801,7 @@
           "type": "swap",
           "attributes": [{
               "key": "offer",
-              "value": "1350147bubsdr"
+              "value": "1350147ubsdr"
             },
             {
               "key": "trader",
@@ -825,7 +825,7 @@
             },
             {
               "key": "amount",
-              "value": "1350147bubsdr"
+              "value": "1350147ubsdr"
             },
             {
               "key": "recipient",
@@ -1536,7 +1536,7 @@
             "type": "swap",
             "attributes": [{
                 "key": "offer",
-                "value": "15057398890bubsdr"
+                "value": "15057398890ubsdr"
               },
               {
                 "key": "trader",
@@ -1560,7 +1560,7 @@
               },
               {
                 "key": "amount",
-                "value": "15057398890bubsdr"
+                "value": "15057398890ubsdr"
               },
               {
                 "key": "recipient",
@@ -1585,7 +1585,7 @@
               "from_address": "iq1zh3vg5zegqn78xpckm78etueye4adl0ckpku44",
               "to_address": "iq1gwsn3fwxf0qwmpda7ujjdzsxj5a446rgwwntl3",
               "offer_coin": {
-                "denom": "bubsdr",
+                "denom": "ubsdr",
                 "amount": "15057398890"
               },
               "ask_denom": "ubkrw"
@@ -1633,7 +1633,7 @@
           "type": "swap",
           "attributes": [{
               "key": "offer",
-              "value": "15057398890bubsdr"
+              "value": "15057398890ubsdr"
             },
             {
               "key": "trader",
@@ -1657,7 +1657,7 @@
             },
             {
               "key": "amount",
-              "value": "15057398890bubsdr"
+              "value": "15057398890ubsdr"
             },
             {
               "key": "recipient",
@@ -1711,11 +1711,11 @@
               },
               {
                 "key": "swap_coin",
-                "value": "92089bubsdr"
+                "value": "92089ubsdr"
               },
               {
                 "key": "swap_fee",
-                "value": "231.500314186043319269bubsdr"
+                "value": "231.500314186043319269ubsdr"
               }
             ]
           },
@@ -1735,7 +1735,7 @@
               },
               {
                 "key": "amount",
-                "value": "92089bubsdr"
+                "value": "92089ubsdr"
               }
             ]
           }
@@ -1755,7 +1755,7 @@
                 "denom": "ubkrw",
                 "amount": "150000000"
               },
-              "ask_denom": "bubsdr"
+              "ask_denom": "ubsdr"
             }
           }],
           "fee": {
@@ -1808,11 +1808,11 @@
             },
             {
               "key": "swap_coin",
-              "value": "92089bubsdr"
+              "value": "92089ubsdr"
             },
             {
               "key": "swap_fee",
-              "value": "231.500314186043319269bubsdr"
+              "value": "231.500314186043319269ubsdr"
             }
           ]
         },
@@ -1832,7 +1832,7 @@
             },
             {
               "key": "amount",
-              "value": "92089bubsdr"
+              "value": "92089ubsdr"
             }
           ]
         }
@@ -3542,7 +3542,7 @@
             "type": "swap",
             "attributes": [{
                 "key": "offer",
-                "value": "274000000bubsdr"
+                "value": "274000000ubsdr"
               },
               {
                 "key": "trader",
@@ -3566,7 +3566,7 @@
               },
               {
                 "key": "amount",
-                "value": "274000000bubsdr"
+                "value": "274000000ubsdr"
               },
               {
                 "key": "recipient",
@@ -3591,7 +3591,7 @@
               "from_address": "iq1zh3vg5zegqn78xpckm78etueye4adl0ckpku44",
               "to_address": "iq1gwsn3fwxf0qwmpda7ujjdzsxj5a446rgwwntl3",
               "offer_coin": {
-                "denom": "bubsdr",
+                "denom": "ubsdr",
                 "amount": "274000000"
               },
               "ask_denom": "ubkrw",
@@ -3639,7 +3639,7 @@
           "type": "swap",
           "attributes": [{
               "key": "offer",
-              "value": "274000000bubsdr"
+              "value": "274000000ubsdr"
             },
             {
               "key": "trader",
@@ -3663,7 +3663,7 @@
             },
             {
               "key": "amount",
-              "value": "274000000bubsdr"
+              "value": "274000000ubsdr"
             },
             {
               "key": "recipient",

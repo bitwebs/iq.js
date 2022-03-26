@@ -18,7 +18,7 @@ describe('MnemonicKey', () => {
       },
       {
         mnemonic:
-          'speak scatter present rice cattle sight amateur novel dizzy wheel cannon mango model sunset smooth appear impose want biqr tattoo theme zero misery flower',
+          'speak scatter present rice cattle sight amatbeur novel dizzy wheel cannon mango model sunset smooth appear impose want biqr tattoo theme zero misery flower',
         publicKey: new SimplePublicKey(
           'A3rCe3YxpfO1tN4t5eUnGM293FCK4PQOcf9wJsoLXpi5'
         ),
@@ -59,7 +59,7 @@ describe('MnemonicKey', () => {
 
     const fee = new Fee(46467, new Coins({ ubiq: '698' }));
     const signDoc = new SignDoc(
-      'columbus-3-testnet',
+      'swartz-3-testnet',
       45,
       0,
       new AuthInfo([], fee),
@@ -108,7 +108,7 @@ describe('MnemonicKey', () => {
     );
 
     const signDoc = new SignDoc(
-      'columbus-3-testnet',
+      'swartz-3-testnet',
       multisigAccountNumber,
       multisigSequenceNumber,
       new AuthInfo([], new Fee(50000, { ubiq: 750 })),
@@ -138,17 +138,17 @@ describe('MnemonicKey', () => {
     });
 
     const signDoc = new SignDoc(
-      'columbus-3-testnet',
+      'swartz-3-testnet',
       47,
       0,
-      new AuthInfo([], new Fee(100000, { ubiq: 1500, bubsdr: 1000 })),
+      new AuthInfo([], new Fee(100000, { ubiq: 1500, ubsdr: 1000 })),
       new TxBody(
         [
           new MsgMultiSend(
             [
               new MsgMultiSend.Input(key.accAddress, {
                 ubiq: 1000000,
-                bubsdr: 1000000,
+                ubsdr: 1000000,
               }),
             ],
             [
@@ -162,7 +162,7 @@ describe('MnemonicKey', () => {
                 'iq1ptdx6akgk7wwemlk5j73artt5t6j8am08ql3qv',
                 {
                   ubiq: 500000,
-                  bubsdr: 1000000,
+                  ubsdr: 1000000,
                 }
               ),
             ]
