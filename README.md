@@ -1,4 +1,4 @@
-#IQ.js
+# IQ.js
 
 <p align="center">
 The JavaScript SDK for the IQ network.
