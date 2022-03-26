@@ -61,7 +61,7 @@ describe('RawKey', () => {
 
     const fee = new Fee(46467, new Coins({ ubiq: '698' }));
     const signDoc = new SignDoc(
-      'swartz-3-testnet',
+      'swartz-1-testnet',
       45,
       0,
       new AuthInfo([], fee),

@@ -104,8 +104,8 @@ describe('Coins', () => {
       ubinr: '11.0',
       ubcad: '0.19',
       ubchf: '0.13',
-      uaud: '0.19',
-      usgd: '0.2',
+      ubaud: '0.19',
+      ubsgd: '0.2',
     });
 
     expect(gasPrices.filter(c => ['ubkrw'].includes(c.denom))).toEqual(
@@ -127,8 +127,8 @@ describe('Coins', () => {
       ubinr: '11.0',
       ubcad: '0.19',
       ubchf: '0.13',
-      uaud: '0.19',
-      usgd: '0.2',
+      ubaud: '0.19',
+      ubsgd: '0.2',
     });
 
     // shouldn't fail or ts giving errors on type

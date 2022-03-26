@@ -3342,7 +3342,7 @@
               "type": "tendermint/PubKeySecp256k1",
               "value": "An/QGB4F5r/sCIEbVaYO1SuY/NHfWdyW5fhQmKNAEgGA"
             },
-            "signature": "uRg+4apvosSoW9audYCLJIeXVLoXMCQUbYTwBLuSjep9dYj4TmrU4S7owUq1vzViZmq/GBWZj6q3uEddjdpamw=="
+            "signature": "uRg+4apvosSoW9baudYCLJIeXVLoXMCQUbYTwBLuSjep9dYj4TmrU4S7owUq1vzViZmq/GBWZj6q3uEddjdpamw=="
           }],
           "memo": "Syncnode's iOS Wallet"
         }

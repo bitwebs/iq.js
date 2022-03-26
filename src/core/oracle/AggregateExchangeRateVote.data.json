@@ -1,7 +1,7 @@
 {
   "exchange_rate_tuples": [
     {
-      "denom": "uaud",
+      "denom": "ubaud",
       "exchange_rate": "8.099497011452464082"
     },
     {
@@ -61,7 +61,7 @@
       "exchange_rate": "52.204496644752941323"
     },
     {
-      "denom": "usgd",
+      "denom": "ubsgd",
       "exchange_rate": "8.238783288519574384"
     },
     {

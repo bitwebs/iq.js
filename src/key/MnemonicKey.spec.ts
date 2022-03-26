@@ -59,7 +59,7 @@ describe('MnemonicKey', () => {
 
     const fee = new Fee(46467, new Coins({ ubiq: '698' }));
     const signDoc = new SignDoc(
-      'swartz-3-testnet',
+      'swartz-1-testnet',
       45,
       0,
       new AuthInfo([], fee),
@@ -108,7 +108,7 @@ describe('MnemonicKey', () => {
     );
 
     const signDoc = new SignDoc(
-      'swartz-3-testnet',
+      'swartz-1-testnet',
       multisigAccountNumber,
       multisigSequenceNumber,
       new AuthInfo([], new Fee(50000, { ubiq: 750 })),
@@ -138,7 +138,7 @@ describe('MnemonicKey', () => {
     });
 
     const signDoc = new SignDoc(
-      'swartz-3-testnet',
+      'swartz-1-testnet',
       47,
       0,
       new AuthInfo([], new Fee(100000, { ubiq: 1500, ubsdr: 1000 })),
