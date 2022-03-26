@@ -4,13 +4,13 @@ describe('MsgAggregateExchangeRateVote', () => {
   it('getAggregateVoteHash', () => {
     const msg = new MsgAggregateExchangeRateVote(
       {
-        ukrw: '245.000',
-        uusd: '0.2242',
-        usdr: '0.182',
+        ubkrw: '245.000',
+        ubusd: '0.2242',
+        bubsdr: '0.182',
       },
       'salt',
-      'terra1krj7amhhagjnyg2tkkuh6l0550y733jnjulzjh',
-      'terravaloper1krj7amhhagjnyg2tkkuh6l0550y733jnjnnlzy'
+      'iq1krj7amhhagjnyg2tkkuh6l0550y733jnjulzjh',
+      'iqvaloper1krj7amhhagjnyg2tkkuh6l0550y733jnjnnlzy'
     );
     msg.getPrevote();
     expect(msg.getAggregateVoteHash()).toEqual(

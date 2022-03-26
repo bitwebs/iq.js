@@ -7,64 +7,64 @@ const example: MsgMultiSend.Amino = {
   value: {
     inputs: [
       {
-        address: 'terra1fex9f78reuwhfsnc8sun6mz8rl9zwqh03fhwf3',
+        address: 'iq1fex9f78reuwhfsnc8sun6mz8rl9zwqh03fhwf3',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '1',
           },
         ],
       },
       {
-        address: 'terra1gg64sjt947atmh45ls45avdwd89ey4c4r72u9h',
+        address: 'iq1gg64sjt947atmh45ls45avdwd89ey4c4r72u9h',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '6900000000',
           },
         ],
       },
       {
-        address: 'terra1yh9u2x8phrh2dan56nntgpmg7xnjrwtldhgmyu',
+        address: 'iq1yh9u2x8phrh2dan56nntgpmg7xnjrwtldhgmyu',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '1000000',
           },
         ],
       },
       {
-        address: 'terra1c5a0njk9q6q6nheja8gp4ymt2c0qspd8ggpg49',
+        address: 'iq1c5a0njk9q6q6nheja8gp4ymt2c0qspd8ggpg49',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '16430000000',
           },
         ],
       },
       {
-        address: 'terra1psswnm8mvy9qg5z4cxc2nvptc9dx62r4tvfrmh',
+        address: 'iq1psswnm8mvy9qg5z4cxc2nvptc9dx62r4tvfrmh',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '9900000000',
           },
         ],
       },
       {
-        address: 'terra10lgpfm8wjrl4d9datzw6r6dl83k977afzel4t5',
+        address: 'iq10lgpfm8wjrl4d9datzw6r6dl83k977afzel4t5',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '15800000000',
           },
         ],
       },
       {
-        address: 'terra13uj5qs3lcqtffqtu6aa089uf6a2pusgwndzzch',
+        address: 'iq13uj5qs3lcqtffqtu6aa089uf6a2pusgwndzzch',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '6900000000',
           },
         ],
@@ -72,64 +72,64 @@ const example: MsgMultiSend.Amino = {
     ],
     outputs: [
       {
-        address: 'terra1fex9f78reuwhfsnc8sun6mz8rl9zwqh03fhwf3',
+        address: 'iq1fex9f78reuwhfsnc8sun6mz8rl9zwqh03fhwf3',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '1',
           },
         ],
       },
       {
-        address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
+        address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '6900000000',
           },
         ],
       },
       {
-        address: 'terra1fex9f78reuwhfsnc8sun6mz8rl9zwqh03fhwf3',
+        address: 'iq1fex9f78reuwhfsnc8sun6mz8rl9zwqh03fhwf3',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '1000000',
           },
         ],
       },
       {
-        address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
+        address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '16430000000',
           },
         ],
       },
       {
-        address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
+        address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '9900000000',
           },
         ],
       },
       {
-        address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
+        address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '15800000000',
           },
         ],
       },
       {
-        address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
+        address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
         coins: [
           {
-            denom: 'ukrw',
+            denom: 'ubkrw',
             amount: '6900000000',
           },
         ],
@@ -142,64 +142,64 @@ const proto_example: MsgMultiSend.Data = {
   '@type': '/cosmos.bank.v1beta1.MsgMultiSend',
   inputs: [
     {
-      address: 'terra1fex9f78reuwhfsnc8sun6mz8rl9zwqh03fhwf3',
+      address: 'iq1fex9f78reuwhfsnc8sun6mz8rl9zwqh03fhwf3',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '1',
         },
       ],
     },
     {
-      address: 'terra1gg64sjt947atmh45ls45avdwd89ey4c4r72u9h',
+      address: 'iq1gg64sjt947atmh45ls45avdwd89ey4c4r72u9h',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '6900000000',
         },
       ],
     },
     {
-      address: 'terra1yh9u2x8phrh2dan56nntgpmg7xnjrwtldhgmyu',
+      address: 'iq1yh9u2x8phrh2dan56nntgpmg7xnjrwtldhgmyu',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '1000000',
         },
       ],
     },
     {
-      address: 'terra1c5a0njk9q6q6nheja8gp4ymt2c0qspd8ggpg49',
+      address: 'iq1c5a0njk9q6q6nheja8gp4ymt2c0qspd8ggpg49',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '16430000000',
         },
       ],
     },
     {
-      address: 'terra1psswnm8mvy9qg5z4cxc2nvptc9dx62r4tvfrmh',
+      address: 'iq1psswnm8mvy9qg5z4cxc2nvptc9dx62r4tvfrmh',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '9900000000',
         },
       ],
     },
     {
-      address: 'terra10lgpfm8wjrl4d9datzw6r6dl83k977afzel4t5',
+      address: 'iq10lgpfm8wjrl4d9datzw6r6dl83k977afzel4t5',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '15800000000',
         },
       ],
     },
     {
-      address: 'terra13uj5qs3lcqtffqtu6aa089uf6a2pusgwndzzch',
+      address: 'iq13uj5qs3lcqtffqtu6aa089uf6a2pusgwndzzch',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '6900000000',
         },
       ],
@@ -207,64 +207,64 @@ const proto_example: MsgMultiSend.Data = {
   ],
   outputs: [
     {
-      address: 'terra1fex9f78reuwhfsnc8sun6mz8rl9zwqh03fhwf3',
+      address: 'iq1fex9f78reuwhfsnc8sun6mz8rl9zwqh03fhwf3',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '1',
         },
       ],
     },
     {
-      address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
+      address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '6900000000',
         },
       ],
     },
     {
-      address: 'terra1fex9f78reuwhfsnc8sun6mz8rl9zwqh03fhwf3',
+      address: 'iq1fex9f78reuwhfsnc8sun6mz8rl9zwqh03fhwf3',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '1000000',
         },
       ],
     },
     {
-      address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
+      address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '16430000000',
         },
       ],
     },
     {
-      address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
+      address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '9900000000',
         },
       ],
     },
     {
-      address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
+      address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '15800000000',
         },
       ],
     },
     {
-      address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
+      address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
       coins: [
         {
-          denom: 'ukrw',
+          denom: 'ubkrw',
           amount: '6900000000',
         },
       ],
@@ -286,25 +286,25 @@ describe('MsgMultiSend', () => {
   it('can be created manually', () => {
     const inputs: MsgMultiSend.Input[] = [
       new MsgMultiSend.Input(
-        'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
+        'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
         new Coins({
-          ukrw: 123123,
+          ubkrw: 123123,
         })
       ),
-      new MsgMultiSend.Input('terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axfad', [
-        new Coin('uluna', 123123),
+      new MsgMultiSend.Input('iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axfad', [
+        new Coin('ubiq', 123123),
       ]),
     ];
 
     const outputs: MsgMultiSend.Output[] = [
       new MsgMultiSend.Output(
-        'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axfad',
+        'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axfad',
         new Coins({
-          ukrw: 123123,
+          ubkrw: 123123,
         })
       ),
-      new MsgMultiSend.Output('terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axfga', {
-        uluna: 123123,
+      new MsgMultiSend.Output('iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axfga', {
+        ubiq: 123123,
       }),
     ];
     const multisend = new MsgMultiSend(inputs, outputs);
@@ -313,19 +313,19 @@ describe('MsgMultiSend', () => {
       value: {
         inputs: [
           {
-            address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
+            address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axf6p',
             coins: [
               {
-                denom: 'ukrw',
+                denom: 'ubkrw',
                 amount: '123123',
               },
             ],
           },
           {
-            address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axfad',
+            address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axfad',
             coins: [
               {
-                denom: 'uluna',
+                denom: 'ubiq',
                 amount: '123123',
               },
             ],
@@ -333,19 +333,19 @@ describe('MsgMultiSend', () => {
         ],
         outputs: [
           {
-            address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axfad',
+            address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axfad',
             coins: [
               {
-                denom: 'ukrw',
+                denom: 'ubkrw',
                 amount: '123123',
               },
             ],
           },
           {
-            address: 'terra105rz2q5a4w7nv7239tl9c4px5cjy7axx3axfga',
+            address: 'iq105rz2q5a4w7nv7239tl9c4px5cjy7axx3axfga',
             coins: [
               {
-                denom: 'uluna',
+                denom: 'ubiq',
                 amount: '123123',
               },
             ],

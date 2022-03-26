@@ -10,21 +10,21 @@ describe('LazyGradedVestingAccount', () => {
       value: {
         base_vesting_account: {
           base_account: {
-            address: 'terra1upg95nlwkfkrq4hhjrn3k9s6ud0aqx36gwnlsn',
+            address: 'iq1upg95nlwkfkrq4hhjrn3k9s6ud0aqx36gwnlsn',
             public_key: null,
             account_number: '684082',
             sequence: '0',
           },
           original_vesting: [
             {
-              denom: 'uluna',
+              denom: 'ubiq',
               amount: '5000000000000',
             },
           ],
           delegated_free: [],
           delegated_vesting: [
             {
-              denom: 'uluna',
+              denom: 'ubiq',
               amount: '1338029091449',
             },
           ],
@@ -32,7 +32,7 @@ describe('LazyGradedVestingAccount', () => {
         },
         vesting_schedules: [
           {
-            denom: 'uluna',
+            denom: 'ubiq',
             schedules: [
               {
                 start_time: '1558677600',

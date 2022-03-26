@@ -5,7 +5,7 @@
 
 describe('Wallet', () => {
   it('sends a MsgSwap transaction', async () => {
-    // const terra = new LCDClient({
+    // const iq = new LCDClient({
     //   URL: 'https://mcafee-1.iqchain.network',
     //   chainID: 'soju-0014',
     // });
@@ -13,14 +13,14 @@ describe('Wallet', () => {
     //   mnemonic:
     //     'sound hour era feature bacon code drift deal raw toward soldier nation winter consider tissue jewel script result mean faculty water exist lunch betray',
     // });
-    // const swap = new MsgSwap(mk.accAddress, new Coin('uluna', 1000), 'umnt');
-    // const wallet = terra.wallet(mk);
+    // const swap = new MsgSwap(mk.accAddress, new Coin('ubiq', 1000), 'ubmnt');
+    // const wallet = iq.wallet(mk);
     // const a = await wallet.createAndSignTx({
     //   msgs: [swap],
     //   memo: 'Hello World!',
-    //   fee: new StdFee(100000, { uluna: 10000 }),
+    //   fee: new StdFee(100000, { ubiq: 10000 }),
     // });
-    // const b = await terra.tx.broadcast(a);
+    // const b = await iq.tx.broadcast(a);
     // expect(b.height).toBeGreaterThan(0);
     // console.log(b.txhash);
   });

@@ -4,15 +4,15 @@ import {
   MsgExecuteContract,
   StdFee,
   isTxError,
-  LocalTerra,
+  LocalIq,
   getCodeId,
   getContractAddress,
 } from '../src';
 import * as fs from 'fs';
 
-// test1 key from localterra accounts
-const terra = new LocalTerra();
-const { test1 } = terra.wallets;
+// test1 key from localiq accounts
+const iq = new LocalIq();
+const { test1 } = iq.wallets;
 
 async function main(): Promise<void> {
   const storeCode = new MsgStoreCode(
@@ -22,7 +22,7 @@ async function main(): Promise<void> {
   const storeCodeTx = await test1.createAndSignTx({
     msgs: [storeCode],
   });
-  const storeCodeTxResult = await terra.tx.broadcast(storeCodeTx);
+  const storeCodeTxResult = await iq.tx.broadcast(storeCodeTx);
 
   console.log(storeCodeTxResult);
 
@@ -39,13 +39,13 @@ async function main(): Promise<void> {
     null,
     +codeId, // code ID
     { count: 0, }, // InitMsg
-    { uluna: 10000000, ukrw: 1000000 } // init coins
+    { ubiq: 10000000, ubkrw: 1000000 } // init coins
   );
 
   const instantiateTx = await test1.createAndSignTx({
     msgs: [instantiate],
   });
-  const instantiateTxResult = await terra.tx.broadcast(instantiateTx);
+  const instantiateTxResult = await iq.tx.broadcast(instantiateTx);
 
   console.log(instantiateTxResult);
 
@@ -61,12 +61,12 @@ async function main(): Promise<void> {
     test1.key.accAddress, // sender
     contractAddress, // contract address
     { increment: {} }, // handle msg
-    { uluna: 100000 } // coins
+    { ubiq: 100000 } // coins
   );
   const executeTx = await test1.createAndSignTx({
     msgs: [execute],
   });
-  const executeTxResult = await terra.tx.broadcast(executeTx);
+  const executeTxResult = await iq.tx.broadcast(executeTx);
   console.log(executeTxResult);
 }
 

@@ -1,7 +1,7 @@
 import { JSONSerializable } from '../../../util/json';
 import { AccAddress } from '../../bech32';
 import { Any } from '@web4/iq.proto/google/protobuf/any';
-import { MsgMigrateCode as MsgMigrateCode_pb } from '@web4/iq.proto/terra/wasm/v1beta1/tx';
+import { MsgMigrateCode as MsgMigrateCode_pb } from '@web4/iq.proto/iq/wasm/v1beta1/tx';
 import * as Long from 'long';
 
 export class MsgMigrateCode extends JSONSerializable<
@@ -60,7 +60,7 @@ export class MsgMigrateCode extends JSONSerializable<
 
   public packAny(): Any {
     return Any.fromPartial({
-      typeUrl: '/terra.wasm.v1beta1.MsgMigrateCode',
+      typeUrl: '/iq.wasm.v1beta1.MsgMigrateCode',
       value: MsgMigrateCode_pb.encode(this.toProto()).finish(),
     });
   }
@@ -77,7 +77,7 @@ export class MsgMigrateCode extends JSONSerializable<
   public toData(): MsgMigrateCode.Data {
     const { sender, code_id, wasm_byte_code } = this;
     return {
-      '@type': '/terra.wasm.v1beta1.MsgMigrateCode',
+      '@type': '/iq.wasm.v1beta1.MsgMigrateCode',
       sender,
       code_id: code_id.toFixed(),
       wasm_byte_code,
@@ -96,7 +96,7 @@ export namespace MsgMigrateCode {
   }
 
   export interface Data {
-    '@type': '/terra.wasm.v1beta1.MsgMigrateCode';
+    '@type': '/iq.wasm.v1beta1.MsgMigrateCode';
     code_id: string;
     sender: AccAddress;
     wasm_byte_code: string;

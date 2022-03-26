@@ -27,7 +27,7 @@ interface SignBytesOption {
 declare global {
   interface Window {
     // add you custom properties and methods
-    isTerraExtensionAvailable: boolean;
+    isIqExtensionAvailable: boolean;
   }
 }
 
@@ -56,7 +56,7 @@ export class Extension {
    * Indicates the Station Extension is installed and availble (requires extension v1.1 or later)
    */
   get isAvailable(): boolean {
-    return !!window.isTerraExtensionAvailable;
+    return !!window.isIqExtensionAvailable;
   }
 
   /**
@@ -133,7 +133,7 @@ export class Extension {
    * Request to Station Extension for connecting a wallet
    *
    * @return {string}     name      'onConnect'
-   * @return {AccAddress} payload   Terra account address
+   * @return {AccAddress} payload   Iq account address
    */
   connect(): number {
     return this.send('connect');

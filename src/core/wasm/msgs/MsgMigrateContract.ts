@@ -1,7 +1,7 @@
 import { JSONSerializable, removeNull } from '../../../util/json';
 import { AccAddress } from '../../bech32';
 import { Any } from '@web4/iq.proto/google/protobuf/any';
-import { MsgMigrateContract as MsgMigrateContract_pb } from '@web4/iq.proto/terra/wasm/v1beta1/tx';
+import { MsgMigrateContract as MsgMigrateContract_pb } from '@web4/iq.proto/iq/wasm/v1beta1/tx';
 import * as Long from 'long';
 
 export class MsgMigrateContract extends JSONSerializable<
@@ -69,7 +69,7 @@ export class MsgMigrateContract extends JSONSerializable<
   }
   public packAny(): Any {
     return Any.fromPartial({
-      typeUrl: '/terra.wasm.v1beta1.MsgMigrateContract',
+      typeUrl: '/iq.wasm.v1beta1.MsgMigrateContract',
       value: MsgMigrateContract_pb.encode(this.toProto()).finish(),
     });
   }
@@ -93,7 +93,7 @@ export class MsgMigrateContract extends JSONSerializable<
   public toData(): MsgMigrateContract.Data {
     const { admin, contract, new_code_id, migrate_msg } = this;
     return {
-      '@type': '/terra.wasm.v1beta1.MsgMigrateContract',
+      '@type': '/iq.wasm.v1beta1.MsgMigrateContract',
       admin,
       contract,
       new_code_id: new_code_id.toFixed(),
@@ -114,7 +114,7 @@ export namespace MsgMigrateContract {
   }
 
   export interface Data {
-    '@type': '/terra.wasm.v1beta1.MsgMigrateContract';
+    '@type': '/iq.wasm.v1beta1.MsgMigrateContract';
     admin: AccAddress;
     contract: AccAddress;
     new_code_id: string;

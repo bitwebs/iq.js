@@ -1,7 +1,7 @@
 import { JSONSerializable } from '../../../util/json';
 import { AccAddress } from '../../bech32';
 import { Any } from '@web4/iq.proto/google/protobuf/any';
-import { MsgClearContractAdmin as MsgClearContractAdmin_pb } from '@web4/iq.proto/terra/wasm/v1beta1/tx';
+import { MsgClearContractAdmin as MsgClearContractAdmin_pb } from '@web4/iq.proto/iq/wasm/v1beta1/tx';
 
 export class MsgClearContractAdmin extends JSONSerializable<
   MsgClearContractAdmin.Amino,
@@ -52,7 +52,7 @@ export class MsgClearContractAdmin extends JSONSerializable<
 
   public packAny(): Any {
     return Any.fromPartial({
-      typeUrl: '/terra.wasm.v1beta1.MsgClearContractAdmin',
+      typeUrl: '/iq.wasm.v1beta1.MsgClearContractAdmin',
       value: MsgClearContractAdmin_pb.encode(this.toProto()).finish(),
     });
   }
@@ -72,7 +72,7 @@ export class MsgClearContractAdmin extends JSONSerializable<
 
   public toData(): MsgClearContractAdmin.Data {
     return {
-      '@type': '/terra.wasm.v1beta1.MsgClearContractAdmin',
+      '@type': '/iq.wasm.v1beta1.MsgClearContractAdmin',
       admin: this.admin,
       contract: this.contract,
     };
@@ -89,7 +89,7 @@ export namespace MsgClearContractAdmin {
   }
 
   export interface Data {
-    '@type': '/terra.wasm.v1beta1.MsgClearContractAdmin';
+    '@type': '/iq.wasm.v1beta1.MsgClearContractAdmin';
     admin: string;
     contract: string;
   }

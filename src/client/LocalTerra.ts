@@ -27,7 +27,7 @@ const LOCALIQ_MNEMONICS = {
     'prefer forget visit mistake mixture feel eyebrow autumn shop pair address airport diesel street pass vague innocent poem method awful require hurry unhappy shoulder',
 };
 
-export class LocalTerra extends LCDClient {
+export class LocalIq extends LCDClient {
   public wallets: {
     validator: Wallet;
     test1: Wallet;
@@ -45,7 +45,7 @@ export class LocalTerra extends LCDClient {
   constructor() {
     super({
       URL: 'http://localhost:1317',
-      chainID: 'localterra',
+      chainID: 'localiq',
     });
 
     this.wallets = {

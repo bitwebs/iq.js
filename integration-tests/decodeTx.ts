@@ -11,7 +11,7 @@ async function main() {
   const bombay = new LCDClient({
     chainID: 'bombay-12',
     URL: 'https://mcafee-lcd.iqchain.network',
-    gasPrices: { uusd: 0.15 },
+    gasPrices: { ubusd: 0.15 },
   });
 
   // a wallet can be created out of any key
@@ -20,9 +20,9 @@ async function main() {
 
   // create a simple message that moves coin balances
   const send = new MsgSend(
-    'terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
-    'terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp',
-    { uluna: 1312029 }
+    'iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
+    'iq17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp',
+    { ubiq: 1312029 }
   );
 
   const tx = await wallet

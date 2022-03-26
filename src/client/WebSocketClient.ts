@@ -87,7 +87,7 @@ function makeQueryParams(query: TendermintQuery): string {
 }
 
 /**
- * An object repesenting a connection to a Terra node's WebSocket RPC endpoint.
+ * An object repesenting a connection to a Iq node's WebSocket RPC endpoint.
  * This allows for subscribing to Tendermint events through WebSocket.
  *
  * ### Events
@@ -114,7 +114,7 @@ function makeQueryParams(query: TendermintQuery): string {
  * 'Tx',
  *  {
  *    'message.action': 'send',
- *    'message.sender': ['CONTAINS', 'terra1...'],
+ *    'message.sender': ['CONTAINS', 'iq1...'],
  *  },
  *  (data) => {
  *    console.log(data.value);

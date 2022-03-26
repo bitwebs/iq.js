@@ -12,7 +12,7 @@ const client = new LCDClient({
   URL: 'https://mcafee-lcd.iqchain.network',
 });
 
-// LocalTerra test1 terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v
+// LocalIq test1 iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v
 const mk = new MnemonicKey({
   mnemonic:
     'notice oak worry limit wrap speak medal online prefer cluster roof addict wrist behave treat actual wasp year salad speed social layer crew genius',
@@ -31,7 +31,7 @@ async function main() {
       description,
       changes
     ),
-    { uluna: 10000000 },
+    { ubiq: 10000000 },
     wallet.key.accAddress
   );
 

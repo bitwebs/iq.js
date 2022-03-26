@@ -1,6 +1,6 @@
 import { JSONSerializable } from '../../util/json';
 import { ValAddress } from '../bech32';
-import { AggregateExchangeRatePrevote as AggregateExchangeRatePrevote_pb } from '@web4/iq.proto/terra/oracle/v1beta1/oracle';
+import { AggregateExchangeRatePrevote as AggregateExchangeRatePrevote_pb } from '@web4/iq.proto/iq/oracle/v1beta1/oracle';
 import * as Long from 'long';
 
 /**

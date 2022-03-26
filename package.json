@@ -1,11 +1,11 @@
 {
   "name": "@web4/iq.js",
   "version": "3.0.8",
-  "description": "The JavaScript SDK for Terra",
+  "description": "The JavaScript SDK for Iq",
   "license": "MIT",
-  "author": "Terraform Labs, PTE.",
+  "author": "Iqform Labs, PTE.",
   "keywords": [
-    "terra",
+    "iq",
     "stablecoin",
     "cryptocurrency",
     "blockchain",

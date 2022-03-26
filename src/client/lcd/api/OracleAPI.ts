@@ -24,7 +24,7 @@ export namespace OracleWhitelist {
 }
 
 export interface OracleParams {
-  /** Number of blocks that define the period over which new votes must be submitted for the exchange rate of uluna. */
+  /** Number of blocks that define the period over which new votes must be submitted for the exchange rate of ubiq. */
   vote_period: number;
 
   /** Ratio of voting power that must be reached for a denomination to be considered "active." */
@@ -78,12 +78,12 @@ export namespace OracleWhitelist {
 
 export class OracleAPI extends BaseAPI {
   /**
-   * Gets the Oracle module's currently registered exchange rate for uluna in all available denominations.
+   * Gets the Oracle module's currently registered exchange rate for ubiq in all available denominations.
    */
   public async exchangeRates(params: APIParams = {}): Promise<Coins> {
     return this.c
       .get<{ exchange_rates: Coins.Data }>(
-        `/terra/oracle/v1beta1/denoms/exchange_rates`,
+        `/iq/oracle/v1beta1/denoms/exchange_rates`,
         params
       )
       .then(d => Coins.fromData(d.exchange_rates));
@@ -91,7 +91,7 @@ export class OracleAPI extends BaseAPI {
 
   /**
    * Gets the Oracle module's currently registered exchange rate for the specific denomination.
-   * @param denom denomination in which to get the exchange rate of uluna
+   * @param denom denomination in which to get the exchange rate of ubiq
    */
   public async exchangeRate(
     denom: Denom,
@@ -99,7 +99,7 @@ export class OracleAPI extends BaseAPI {
   ): Promise<Coin | undefined> {
     return this.c
       .get<{ exchange_rate: string }>(
-        `/terra/oracle/v1beta1/denoms/${denom}/exchange_rate`,
+        `/iq/oracle/v1beta1/denoms/${denom}/exchange_rate`,
         params
       )
       .then(d =>
@@ -115,13 +115,13 @@ export class OracleAPI extends BaseAPI {
    */
   public async activeDenoms(params: APIParams = {}): Promise<Denom[]> {
     return this.c
-      .get<{ actives: Denom[] }>(`/terra/oracle/v1beta1/denoms/actives`, params)
+      .get<{ actives: Denom[] }>(`/iq/oracle/v1beta1/denoms/actives`, params)
       .then(d => d.actives);
   }
 
   /**
    * Gets the registered feeder address associated with the validator. The feeder address is the
-   * Terra account that is permitted to sign Oracle vote messages in the validator's name.
+   * Iq account that is permitted to sign Oracle vote messages in the validator's name.
    * @param validator validator's operator address
    */
   public async feederAddress(
@@ -130,7 +130,7 @@ export class OracleAPI extends BaseAPI {
   ): Promise<AccAddress> {
     return this.c
       .get<{ feeder_addr: AccAddress }>(
-        `/terra/oracle/v1beta1/validators/${validator}/feeder`,
+        `/iq/oracle/v1beta1/validators/${validator}/feeder`,
         params
       )
       .then(d => d.feeder_addr);
@@ -146,7 +146,7 @@ export class OracleAPI extends BaseAPI {
   ): Promise<number> {
     return this.c
       .get<{ miss_counter: string }>(
-        `/terra/oracle/v1beta1/validators/${validator}/miss`,
+        `/iq/oracle/v1beta1/validators/${validator}/miss`,
         params
       )
       .then(d => Number.parseInt(d.miss_counter));
@@ -162,7 +162,7 @@ export class OracleAPI extends BaseAPI {
   ): Promise<AggregateExchangeRatePrevote> {
     return this.c
       .get<{ aggregate_prevote: AggregateExchangeRatePrevote.Data }>(
-        `/terra/oracle/v1beta1/validators/${validator}/aggregate_prevote`,
+        `/iq/oracle/v1beta1/validators/${validator}/aggregate_prevote`,
         params
       )
       .then(d => AggregateExchangeRatePrevote.fromData(d.aggregate_prevote));
@@ -178,7 +178,7 @@ export class OracleAPI extends BaseAPI {
   ): Promise<AggregateExchangeRateVote> {
     return this.c
       .get<{ aggregate_vote: AggregateExchangeRateVote.Data }>(
-        `/terra/oracle/v1beta1/validators/${validator}/aggregate_vote`,
+        `/iq/oracle/v1beta1/validators/${validator}/aggregate_vote`,
         params
       )
       .then(d => AggregateExchangeRateVote.fromData(d.aggregate_vote));
@@ -190,7 +190,7 @@ export class OracleAPI extends BaseAPI {
   public async parameters(params: APIParams = {}): Promise<OracleParams> {
     return this.c
       .get<{ params: OracleParams.Data }>(
-        `/terra/oracle/v1beta1/params`,
+        `/iq/oracle/v1beta1/params`,
         params
       )
       .then(({ params: d }) => ({

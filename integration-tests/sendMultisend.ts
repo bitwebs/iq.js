@@ -15,25 +15,25 @@ async function main() {
   const bombay = new LCDClient({
     chainID: 'bombay-12',
     URL: 'https://mcafee-lcd.iqchain.network',
-    gasPrices: { uusd: 0.38 },
+    gasPrices: { ubusd: 0.38 },
   });
 
   // create a simple message that moves coin balances
   const send = new MsgMultiSend(
     [
-      new MsgMultiSend.Input('terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v', {
-        uusd: 100000,
+      new MsgMultiSend.Input('iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v', {
+        ubusd: 100000,
       }),
-      new MsgMultiSend.Input('terra1fqwsd6as9v7f93vja2u7yjs98enawcaq6ge2dx', {
-        uusd: 200000,
+      new MsgMultiSend.Input('iq1fqwsd6as9v7f93vja2u7yjs98enawcaq6ge2dx', {
+        ubusd: 200000,
       }),
     ],
     [
-      new MsgMultiSend.Output('terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp', {
-        uusd: 150000,
+      new MsgMultiSend.Output('iq17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp', {
+        ubusd: 150000,
       }),
-      new MsgMultiSend.Output('terra1gufrav46pnpwf03yu7xz76ylkmatsxtplrxnmc', {
-        uusd: 150000,
+      new MsgMultiSend.Output('iq1gufrav46pnpwf03yu7xz76ylkmatsxtplrxnmc', {
+        ubusd: 150000,
       }),
     ]
   );
@@ -49,7 +49,7 @@ async function main() {
     {
       msgs: [send],
       memo: 'memo',
-      gasPrices: { uusd: 0.456 },
+      gasPrices: { ubusd: 0.456 },
       gasAdjustment: 1.4,
     }
   );

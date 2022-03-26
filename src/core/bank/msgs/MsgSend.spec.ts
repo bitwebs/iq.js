@@ -6,11 +6,11 @@ describe('MsgSend', () => {
     const send = MsgSend.fromAmino({
       type: 'bank/MsgSend',
       value: {
-        from_address: 'terra1y4umfuqfg76t8mfcff6zzx7elvy93jtp4xcdvw',
-        to_address: 'terra1v9ku44wycfnsucez6fp085f5fsksp47u9x8jr4',
+        from_address: 'iq1y4umfuqfg76t8mfcff6zzx7elvy93jtp4xcdvw',
+        to_address: 'iq1v9ku44wycfnsucez6fp085f5fsksp47u9x8jr4',
         amount: [
           {
-            denom: 'uluna',
+            denom: 'ubiq',
             amount: '8102024952',
           },
         ],
@@ -18,21 +18,21 @@ describe('MsgSend', () => {
     });
 
     expect(send).toMatchObject({
-      from_address: 'terra1y4umfuqfg76t8mfcff6zzx7elvy93jtp4xcdvw',
-      to_address: 'terra1v9ku44wycfnsucez6fp085f5fsksp47u9x8jr4',
+      from_address: 'iq1y4umfuqfg76t8mfcff6zzx7elvy93jtp4xcdvw',
+      to_address: 'iq1v9ku44wycfnsucez6fp085f5fsksp47u9x8jr4',
       amount: new Coins({
-        uluna: 8102024952,
+        ubiq: 8102024952,
       }),
     });
 
     expect(send.toAmino()).toMatchObject({
       type: 'bank/MsgSend',
       value: {
-        from_address: 'terra1y4umfuqfg76t8mfcff6zzx7elvy93jtp4xcdvw',
-        to_address: 'terra1v9ku44wycfnsucez6fp085f5fsksp47u9x8jr4',
+        from_address: 'iq1y4umfuqfg76t8mfcff6zzx7elvy93jtp4xcdvw',
+        to_address: 'iq1v9ku44wycfnsucez6fp085f5fsksp47u9x8jr4',
         amount: [
           {
-            denom: 'uluna',
+            denom: 'ubiq',
             amount: '8102024952',
           },
         ],
@@ -43,31 +43,31 @@ describe('MsgSend', () => {
   it('deserialize correctly proto', () => {
     const send = MsgSend.fromData({
       '@type': '/cosmos.bank.v1beta1.MsgSend',
-      from_address: 'terra1y4umfuqfg76t8mfcff6zzx7elvy93jtp4xcdvw',
-      to_address: 'terra1v9ku44wycfnsucez6fp085f5fsksp47u9x8jr4',
+      from_address: 'iq1y4umfuqfg76t8mfcff6zzx7elvy93jtp4xcdvw',
+      to_address: 'iq1v9ku44wycfnsucez6fp085f5fsksp47u9x8jr4',
       amount: [
         {
-          denom: 'uluna',
+          denom: 'ubiq',
           amount: '8102024952',
         },
       ],
     });
 
     expect(send).toMatchObject({
-      from_address: 'terra1y4umfuqfg76t8mfcff6zzx7elvy93jtp4xcdvw',
-      to_address: 'terra1v9ku44wycfnsucez6fp085f5fsksp47u9x8jr4',
+      from_address: 'iq1y4umfuqfg76t8mfcff6zzx7elvy93jtp4xcdvw',
+      to_address: 'iq1v9ku44wycfnsucez6fp085f5fsksp47u9x8jr4',
       amount: new Coins({
-        uluna: 8102024952,
+        ubiq: 8102024952,
       }),
     });
 
     expect(send.toData()).toMatchObject({
       '@type': '/cosmos.bank.v1beta1.MsgSend',
-      from_address: 'terra1y4umfuqfg76t8mfcff6zzx7elvy93jtp4xcdvw',
-      to_address: 'terra1v9ku44wycfnsucez6fp085f5fsksp47u9x8jr4',
+      from_address: 'iq1y4umfuqfg76t8mfcff6zzx7elvy93jtp4xcdvw',
+      to_address: 'iq1v9ku44wycfnsucez6fp085f5fsksp47u9x8jr4',
       amount: [
         {
-          denom: 'uluna',
+          denom: 'ubiq',
           amount: '8102024952',
         },
       ],

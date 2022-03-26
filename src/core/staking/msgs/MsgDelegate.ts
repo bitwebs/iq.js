@@ -5,7 +5,7 @@ import { Any } from '@web4/iq.proto/google/protobuf/any';
 import { MsgDelegate as MsgDelegate_pb } from '@web4/iq.proto/cosmos/staking/v1beta1/tx';
 
 /**
- * A delegator can submit this message to send more Luna to be staked through a
+ * A delegator can submit this message to send more Biq to be staked through a
  * validator delegate.
  */
 export class MsgDelegate extends JSONSerializable<
@@ -17,7 +17,7 @@ export class MsgDelegate extends JSONSerializable<
    *
    * @param delegator_address delegator's account address
    * @param validator_address validator's operator address
-   * @param amount amount of LUNA to be sent for delegation
+   * @param amount amount of BIQ to be sent for delegation
    */
   constructor(
     public delegator_address: AccAddress,

@@ -19,7 +19,7 @@ describe('IbcTransferAPI', () => {
       'B8AF5D92165F35AB31F3FC7C7B444B9D240760FA5D406C49D24862BD0284E395'
     );
     expect(denomTrace.path).toEqual('transfer/channel-4');
-    expect(denomTrace.base_denom).toEqual('uluna');
+    expect(denomTrace.base_denom).toEqual('ubiq');
   });
 
   it('params', async () => {

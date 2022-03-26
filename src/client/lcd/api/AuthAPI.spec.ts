@@ -11,7 +11,7 @@ describe('AuthAPI', () => {
   describe('accounts', () => {
     it('account exists', async () => {
       const acct = await auth.accountInfo(
-        'terra1fa0trn2nqjc2n6mmz9txta7ky5h5nnp9m6cra3'
+        'iq1fa0trn2nqjc2n6mmz9txta7ky5h5nnp9m6cra3'
       );
 
       expect(acct instanceof BaseAccount).toBe(true);
@@ -20,7 +20,7 @@ describe('AuthAPI', () => {
     // TODO: - after merging CosmosSDK@v0.43.x restore vesting account test
     // it('LazyGradedVestingAccount', async () => {
     //   const acct = await auth.accountInfo(
-    //     'terra1upg95nlwkfkrq4hhjrn3k9s6ud0aqx36gwnlsn'
+    //     'iq1upg95nlwkfkrq4hhjrn3k9s6ud0aqx36gwnlsn'
     //   );
 
     //   expect(acct instanceof LazyGradedVestingAccount).toBe(true);

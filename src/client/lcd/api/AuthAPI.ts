@@ -9,7 +9,7 @@ import { APIParams } from '../APIRequester';
 
 export class AuthAPI extends BaseAPI {
   /**
-   * Looks up the account information using its Terra account address. If the account has
+   * Looks up the account information using its Iq account address. If the account has
    * vesting, it will be a [[LazyGradedVestingAccount]].
    *
    * @param address address of account to look up

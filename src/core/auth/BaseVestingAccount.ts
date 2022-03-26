@@ -92,7 +92,7 @@ export class BaseVestingAccount extends JSONSerializable<
     } = this;
 
     return {
-      '@type': '/terra.vesting.v1beta1.LazyGradedVestingAccount',
+      '@type': '/iq.vesting.v1beta1.LazyGradedVestingAccount',
       base_account: base_account.toData(),
       delegated_free: delegated_free.toData(),
       delegated_vesting: delegated_vesting.toData(),
@@ -172,7 +172,7 @@ export namespace BaseVestingAccount {
   }
 
   export interface Data extends DataValue {
-    '@type': '/terra.vesting.v1beta1.LazyGradedVestingAccount';
+    '@type': '/iq.vesting.v1beta1.LazyGradedVestingAccount';
   }
 
   export type Proto = BaseVestingAccount_pb;

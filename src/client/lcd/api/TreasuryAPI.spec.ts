@@ -10,9 +10,9 @@ describe('TreasuryAPI', () => {
     await expect(treasury.taxCaps()).resolves.toBeInstanceOf(Coins);
   });
 
-  it('taxCap (uusd)', async () => {
+  it('taxCap (ubusd)', async () => {
     await expect(
-      treasury.taxCap('uusd').then(r => r.toData())
+      treasury.taxCap('ubusd').then(r => r.toData())
     ).resolves.toMatchObject({
       denom: expect.any(String),
       amount: expect.any(String),

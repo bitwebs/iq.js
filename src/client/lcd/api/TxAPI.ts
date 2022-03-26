@@ -279,7 +279,7 @@ export class TxAPI extends BaseAPI {
     const gasPrices = options.gasPrices || this.lcd.config.gasPrices;
     const gasAdjustment =
       options.gasAdjustment || this.lcd.config.gasAdjustment;
-    const feeDenoms = options.feeDenoms || ['uusd'];
+    const feeDenoms = options.feeDenoms || ['ubusd'];
     let gas = options.gas;
     let gasPricesCoins: Coins | undefined;
 
@@ -311,7 +311,7 @@ export class TxAPI extends BaseAPI {
 
     const feeAmount = gasPricesCoins
       ? gasPricesCoins.mul(gas).toIntCeilCoins()
-      : '0uusd';
+      : '0ubusd';
 
     return new Fee(Number.parseInt(gas), feeAmount, '', '');
   }

@@ -5,7 +5,7 @@ import { Any } from '@web4/iq.proto/google/protobuf/any';
 import { MsgBeginRedelegate as MsgBeginRedelegate_pb } from '@web4/iq.proto/cosmos/staking/v1beta1/tx';
 
 /**
- * A delegator can choose to redelegate their bonded Luna and transfer a delegation
+ * A delegator can choose to redelegate their bonded Biq and transfer a delegation
  * amount from one validator to another. Unlike undelegating, redelegations do not incur
  * a 21-day unbonding period and happen immediately.
  */
@@ -19,7 +19,7 @@ export class MsgBeginRedelegate extends JSONSerializable<
    * @param delegator_address delegator's account address
    * @param validator_src_address validator to undelegate from
    * @param validator_dst_address validator to delegate to
-   * @param amount LUNA to be redelegated
+   * @param amount BIQ to be redelegated
    */
   constructor(
     public delegator_address: AccAddress,

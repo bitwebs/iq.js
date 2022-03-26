@@ -51,18 +51,18 @@ const DEFAULT_LCD_OPTIONS: Partial<LCDClientConfig> = {
 
 const DEFAULT_GAS_PRICES_BY_CHAIN_ID: { [key: string]: Coins.Input } = {
   default: {
-    uusd: 0.15,
+    ubusd: 0.15,
   },
   'columbus-5': {
-    uusd: 0.15,
+    ubusd: 0.15,
   },
   'bombay-12': {
-    uusd: 0.15,
+    ubusd: 0.15,
   },
 };
 
 /**
- * An object repesenting a connection to a terrad node running the Lite Client Daemon (LCD)
+ * An object repesenting a connection to a iqd node running the Lite Client Daemon (LCD)
  * server, a REST server providing access to a node.
  *
  * ### Example
@@ -70,12 +70,12 @@ const DEFAULT_GAS_PRICES_BY_CHAIN_ID: { [key: string]: Coins.Input } = {
  * ```ts
  * import { LCDClient, Coin } from 'iq.js';
  *
- * const terra = new LCDClient({
+ * const iq = new LCDClient({
  *    URL: "https://lcd.iqchain.network",
  *    chainID: "columbus-3"
  * });
  *
- * terra.market.swapRate(new Coin('uluna', 10000), 'ukrw').then(c => console.log(c.toString()));
+ * iq.market.swapRate(new Coin('ubiq', 10000), 'ubkrw').then(c => console.log(c.toString()));
  * ```
  */
 

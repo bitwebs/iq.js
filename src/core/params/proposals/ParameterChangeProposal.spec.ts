@@ -43,9 +43,9 @@ describe('ParameterChangeProposal', () => {
 //           content: {
 //             type: 'params/ParameterChangeProposal',
 //             value: {
-//               title: 'Proposal to decrease minspread of Luna to Terra swaps',
+//               title: 'Proposal to decrease minspread of Biq to Iq swaps',
 //               description:
-//                 'As the demand for Terra has recently increased, the amount of swapping Luna and Terra has increased. I think spreads should be reduced to stabilize supply of Terra and incinerate Luna. So, I propose to change minspread value of Luna to Terra swaps from 0.5% to 0.1%.',
+//                 'As the demand for Iq has recently increased, the amount of swapping Biq and Iq has increased. I think spreads should be reduced to stabilize supply of Iq and incinerate Biq. So, I propose to change minspread value of Biq to Iq swaps from 0.5% to 0.1%.',
 //               changes: [
 //                 {
 //                   subspace: 'market',
@@ -56,14 +56,14 @@ describe('ParameterChangeProposal', () => {
 //             },
 //           },
 //           initial_deposit: [],
-//           proposer: 'terra1e5ncelsh4qhqt3s97vn43hxlhmt7zd43yszdnf',
+//           proposer: 'iq1e5ncelsh4qhqt3s97vn43hxlhmt7zd43yszdnf',
 //         },
 //       },
 //     ],
 //     fee: {
 //       amount: [
 //         {
-//           denom: 'umnt',
+//           denom: 'ubmnt',
 //           amount: '703654',
 //         },
 //       ],
@@ -128,7 +128,7 @@ describe('ParameterChangeProposal', () => {
 //       { subspace: 'staking', key: 'UnbondingTime', value: '"33"' },
 //       { subspace: 'staking', key: 'MaxValidators', value: '9999' },
 //       { subspace: 'staking', key: 'KeyMaxEntries', value: '2323' },
-//       { subspace: 'staking', key: 'BondDenom', value: '"uluna"' },
+//       { subspace: 'staking', key: 'BondDenom', value: '"ubiq"' },
 //       { subspace: 'slashing', key: 'MaxEvidenceAge', value: '"234234"' },
 //       { subspace: 'slashing', key: 'SignedBlocksWindow', value: '"1"' },
 //       {
@@ -191,7 +191,7 @@ describe('ParameterChangeProposal', () => {
 //       {
 //         subspace: 'oracle',
 //         key: 'Whitelist',
-//         value: '[{"name":"ukrw","tobin_tax":"0.003500000000000000"}]',
+//         value: '[{"name":"ubkrw","tobin_tax":"0.003500000000000000"}]',
 //       },
 //       {
 //         subspace: 'oracle',
@@ -219,7 +219,7 @@ describe('ParameterChangeProposal', () => {
 //         subspace: 'gov',
 //         key: 'depositparams',
 //         value:
-//           '{"min_deposit":[{"denom":"ukrw","amount":"5"},{"denom":"uluna","amount":"2"}],"max_deposit_period":"30434"}',
+//           '{"min_deposit":[{"denom":"ubkrw","amount":"5"},{"denom":"ubiq","amount":"2"}],"max_deposit_period":"30434"}',
 //       },
 //       {
 //         subspace: 'gov',
@@ -245,7 +245,7 @@ describe('ParameterChangeProposal', () => {
 //       {
 //         subspace: 'mint',
 //         key: 'MintDenom',
-//         value: '"uluna"',
+//         value: '"ubiq"',
 //       },
 //       {
 //         subspace: 'mint',
@@ -299,7 +299,7 @@ describe('ParameterChangeProposal', () => {
 //         UnbondingTime: 33,
 //         MaxValidators: 9999,
 //         KeyMaxEntries: 2323,
-//         BondDenom: 'uluna',
+//         BondDenom: 'ubiq',
 //       },
 //       slashing: {
 //         MaxEvidenceAge: 234234,
@@ -329,7 +329,7 @@ describe('ParameterChangeProposal', () => {
 //         RewardBand: new Dec('234343'),
 //         RewardDistributionWindow: 345345,
 //         Whitelist: [
-//           { name: 'ukrw', tobin_tax: new Dec('0.003500000000000000') },
+//           { name: 'ubkrw', tobin_tax: new Dec('0.003500000000000000') },
 //         ],
 //         SlashFraction: new Dec(23423.232343),
 //         SlashWindow: 343311,
@@ -342,7 +342,7 @@ describe('ParameterChangeProposal', () => {
 //       },
 //       gov: {
 //         depositparams: {
-//           min_deposit: new Coins({ ukrw: 5, uluna: 2 }),
+//           min_deposit: new Coins({ ubkrw: 5, ubiq: 2 }),
 //           max_deposit_period: 30434,
 //         },
 //         votingparams: {
@@ -357,7 +357,7 @@ describe('ParameterChangeProposal', () => {
 //       mint: {
 //         InflationRateChange: new Dec(0.01),
 //         BlocksPerYear: 1000000,
-//         MintDenom: 'uluna',
+//         MintDenom: 'ubiq',
 //         InflationMin: new Dec(0.01),
 //         InflationMax: new Dec(0.01),
 //         GoalBonded: new Dec(0.01),

@@ -35,7 +35,7 @@ async function main() {
   const bombay = new LCDClient({
     chainID: 'bombay-12',
     URL: 'https://mcafee-lcd.iqchain.network',
-    gasPrices: { uusd: 0.38 },
+    gasPrices: { ubusd: 0.38 },
   });
 
   const address = multisigPubkey.address();
@@ -44,8 +44,8 @@ async function main() {
   // create a simple message that moves coin balances
   const send = new MsgSend(
     address,
-    'terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
-    { uusd: 100000 }
+    'iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
+    { ubusd: 100000 }
   );
 
   const accInfo = await bombay.auth.accountInfo(address);
@@ -60,7 +60,7 @@ async function main() {
     {
       msgs: [send],
       memo: 'memo',
-      gasPrices: { uusd: 0.456 },
+      gasPrices: { ubusd: 0.456 },
       gasAdjustment: 1.2,
     }
   );

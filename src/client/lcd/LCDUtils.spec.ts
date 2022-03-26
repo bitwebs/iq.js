@@ -12,7 +12,7 @@ const lcdUtils = new LCDUtils(
 describe('LCDUtils', () => {
   it('calculateTax', async () => {
     await expect(
-      lcdUtils.calculateTax(new Coin('uluna', '0.0'))
+      lcdUtils.calculateTax(new Coin('ubiq', '0.0'))
     ).resolves.toBeInstanceOf(Coin);
   });
 

@@ -5,7 +5,7 @@ const client = new LCDClient({
   URL: 'https://mcafee-lcd.iqchain.network',
 });
 
-// LocalTerra test1 terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v
+// LocalIq test1 iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v
 const mk = new MnemonicKey({
   mnemonic:
     'notice oak worry limit wrap speak medal online prefer cluster roof addict wrist behave treat actual wasp year salad speed social layer crew genius',
@@ -16,7 +16,7 @@ const wallet = client.wallet(mk);
 async function main() {
   const execute = new MsgExecuteContract(
     wallet.key.accAddress, // sender
-    'terra156v8s539wtz0sjpn8y8a8lfg8fhmwa7fy22aff', // contract account address
+    'iq156v8s539wtz0sjpn8y8a8lfg8fhmwa7fy22aff', // contract account address
     // handle msg
     {
       swap: {
@@ -24,13 +24,13 @@ async function main() {
           amount: '1000000',
           info: {
             native_token: {
-              denom: 'uluna',
+              denom: 'ubiq',
             },
           },
         },
       },
     },
-    { uluna: 1000000 } // coins
+    { ubiq: 1000000 } // coins
   );
 
   const executeTx = await wallet.createAndSignTx({

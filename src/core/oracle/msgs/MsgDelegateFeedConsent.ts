@@ -1,7 +1,7 @@
 import { JSONSerializable } from '../../../util/json';
 import { AccAddress, ValAddress } from '../../bech32';
 import { Any } from '@web4/iq.proto/google/protobuf/any';
-import { MsgDelegateFeedConsent as MsgDelegateFeedConsent_pb } from '@web4/iq.proto/terra/oracle/v1beta1/tx';
+import { MsgDelegateFeedConsent as MsgDelegateFeedConsent_pb } from '@web4/iq.proto/iq/oracle/v1beta1/tx';
 
 /**
  * A **feeeder** is an account which is responsible for signing transactions with Oracle vote
@@ -55,7 +55,7 @@ export class MsgDelegateFeedConsent extends JSONSerializable<
   public toData(): MsgDelegateFeedConsent.Data {
     const { operator, delegate } = this;
     return {
-      '@type': '/terra.oracle.v1beta1.MsgDelegateFeedConsent',
+      '@type': '/iq.oracle.v1beta1.MsgDelegateFeedConsent',
       operator,
       delegate,
     };
@@ -77,7 +77,7 @@ export class MsgDelegateFeedConsent extends JSONSerializable<
 
   public packAny(): Any {
     return Any.fromPartial({
-      typeUrl: '/terra.oracle.v1beta1.MsgDelegateFeedConsent',
+      typeUrl: '/iq.oracle.v1beta1.MsgDelegateFeedConsent',
       value: MsgDelegateFeedConsent_pb.encode(this.toProto()).finish(),
     });
   }
@@ -99,7 +99,7 @@ export namespace MsgDelegateFeedConsent {
   }
 
   export interface Data {
-    '@type': '/terra.oracle.v1beta1.MsgDelegateFeedConsent';
+    '@type': '/iq.oracle.v1beta1.MsgDelegateFeedConsent';
     operator: ValAddress;
     delegate: AccAddress;
   }

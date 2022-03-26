@@ -7,7 +7,7 @@ import {
   LazyGradedVestingAccount as LazyGradedVestingAccount_pb,
   Schedule as Schedule_pb,
   VestingSchedule as VestingSchedule_pb,
-} from '@web4/iq.proto/terra/vesting/v1beta1/vesting';
+} from '@web4/iq.proto/iq/vesting/v1beta1/vesting';
 import { Any } from '@web4/iq.proto/google/protobuf/any';
 import * as Long from 'long';
 import { PublicKey } from '../PublicKey';
@@ -74,7 +74,7 @@ export class LazyGradedVestingAccount extends JSONSerializable<
   public toData(): LazyGradedVestingAccount.Data {
     const { base_vesting_account, vesting_schedules } = this;
     return {
-      '@type': '/terra.vesting.v1beta1.LazyGradedVestingAccount',
+      '@type': '/iq.vesting.v1beta1.LazyGradedVestingAccount',
       base_vesting_account: base_vesting_account.toData(),
       vesting_schedules: vesting_schedules.map(vs => vs.toData()),
     };
@@ -84,7 +84,7 @@ export class LazyGradedVestingAccount extends JSONSerializable<
     data: LazyGradedVestingAccount.Data
   ): LazyGradedVestingAccount {
     const base_vesting_account = BaseVestingAccount.fromData({
-      '@type': '/terra.vesting.v1beta1.LazyGradedVestingAccount',
+      '@type': '/iq.vesting.v1beta1.LazyGradedVestingAccount',
       ...data.base_vesting_account,
     });
 
@@ -122,7 +122,7 @@ export class LazyGradedVestingAccount extends JSONSerializable<
 
   public packAny(): Any {
     return Any.fromPartial({
-      typeUrl: '/terra.vesting.v1beta1.LazyGradedVestingAccount',
+      typeUrl: '/iq.vesting.v1beta1.LazyGradedVestingAccount',
       value: LazyGradedVestingAccount_pb.encode(this.toProto()).finish(),
     });
   }
@@ -144,7 +144,7 @@ export namespace LazyGradedVestingAccount {
   }
 
   export interface Data {
-    '@type': '/terra.vesting.v1beta1.LazyGradedVestingAccount';
+    '@type': '/iq.vesting.v1beta1.LazyGradedVestingAccount';
     base_vesting_account: BaseVestingAccount.DataValue;
     vesting_schedules: VestingSchedule.Data[];
   }

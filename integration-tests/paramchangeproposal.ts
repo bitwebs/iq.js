@@ -1,7 +1,7 @@
 import {
   MsgSubmitProposal,
   isTxError,
-  LocalTerra,
+  LocalIq,
   Dec,
   ParameterChangeProposal,
   Coin,
@@ -12,9 +12,9 @@ import {
   StdFee,
 } from '../src';
 
-// test1 key from localterra accounts
-const terra = new LocalTerra();
-const { test1 } = terra.wallets;
+// test1 key from localiq accounts
+const iq = new LocalIq();
+const { test1 } = iq.wallets;
 
 const proposal = new ParameterChangeProposal('testing params', 'yay!', {
   distribution: {
@@ -27,7 +27,7 @@ const proposal = new ParameterChangeProposal('testing params', 'yay!', {
     UnbondingTime: 33,
     MaxValidators: 9999,
     KeyMaxEntries: 2323,
-    BondDenom: 'uluna',
+    BondDenom: 'ubiq',
   },
   slashing: {
     MaxEvidenceAge: 234234,
@@ -67,7 +67,7 @@ const proposal = new ParameterChangeProposal('testing params', 'yay!', {
   },
   gov: {
     depositparams: {
-      min_deposit: new Coins({ ukrw: 5, uluna: 2 }),
+      min_deposit: new Coins({ ubkrw: 5, ubiq: 2 }),
       max_deposit_period: 30434,
     },
     votingparams: {
@@ -82,7 +82,7 @@ const proposal = new ParameterChangeProposal('testing params', 'yay!', {
   mint: {
     InflationRateChange: new Dec(0.01),
     BlocksPerYear: 1000000,
-    MintDenom: 'uluna',
+    MintDenom: 'ubiq',
     InflationMin: new Dec(0.01),
     InflationMax: new Dec(0.01),
     GoalBonded: new Dec(0.01),
@@ -103,10 +103,10 @@ async function main(): Promise<void> {
 
   const tx = await test1.createAndSignTx({
     msgs: [submitProposal],
-    fee: new StdFee(1000000, { uluna: 1000000000 }),
+    fee: new StdFee(1000000, { ubiq: 1000000000 }),
   });
 
-  const result = await terra.tx.broadcast(tx);
+  const result = await iq.tx.broadcast(tx);
   console.log(result);
 }
 

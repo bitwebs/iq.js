@@ -5,7 +5,7 @@ import { ValConsPublicKey } from '../PublicKey';
 describe('Validator', () => {
   it('deserializes', () => {
     const validator = Validator.fromAmino({
-      operator_address: 'terravaloper1ptyzewnns2kn37ewtmv6ppsvhdnmeapvgk6d65',
+      operator_address: 'iqvaloper1ptyzewnns2kn37ewtmv6ppsvhdnmeapvgk6d65',
       consensus_pubkey: {
         type: 'tendermint/PubKeyEd25519',
         value: '1v2BCLSLYe9tQ9JXMuYURf3UIQ/uE+RUVcYfTDVM1ec=',
@@ -19,7 +19,7 @@ describe('Validator', () => {
         identity: 'DA9C5AD3E308E426',
         website: 'https://www.westaking.io',
         details:
-          'Delegate your luna to us for the staking rewards. We will do our best as secure and stable validator.',
+          'Delegate your biq to us for the staking rewards. We will do our best as secure and stable validator.',
         security_contact: 'x@x.com',
       },
       unbonding_height: '0',
@@ -36,7 +36,7 @@ describe('Validator', () => {
     });
 
     expect(validator).toMatchObject({
-      operator_address: 'terravaloper1ptyzewnns2kn37ewtmv6ppsvhdnmeapvgk6d65',
+      operator_address: 'iqvaloper1ptyzewnns2kn37ewtmv6ppsvhdnmeapvgk6d65',
       consensus_pubkey: new ValConsPublicKey(
         '1v2BCLSLYe9tQ9JXMuYURf3UIQ/uE+RUVcYfTDVM1ec='
       ),
@@ -49,7 +49,7 @@ describe('Validator', () => {
         identity: 'DA9C5AD3E308E426',
         website: 'https://www.westaking.io',
         details:
-          'Delegate your luna to us for the staking rewards. We will do our best as secure and stable validator.',
+          'Delegate your biq to us for the staking rewards. We will do our best as secure and stable validator.',
         security_contact: 'x@x.com',
       },
       unbonding_height: 0,

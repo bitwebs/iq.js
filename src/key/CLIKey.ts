@@ -15,8 +15,8 @@ interface CLIKeyParams {
 }
 
 /**
- * Key implementation that uses `terrad` to sign transactions. Keys should be registered
- * in `terrad`'s OS keyring.
+ * Key implementation that uses `iqd` to sign transactions. Keys should be registered
+ * in `iqd`'s OS keyring.
  *
  * NOTE: This Key implementation overrides `createSignature()` and only provide a shim
  * for `sign()`.
@@ -26,14 +26,14 @@ export class CLIKey extends Key {
 
   /**
    *
-   * @param keyName name of the key for terrad
+   * @param keyName name of the key for iqd
    * @param multisig (optional) address of multisig account on behalf of which transaction shall be signed
-   * @param cliPath (optional) path of terrad
-   * @param home (optional) home option for terrad
+   * @param cliPath (optional) path of iqd
+   * @param home (optional) home option for iqd
    */
   constructor(private params: CLIKeyParams) {
     super();
-    params.cliPath = params.cliPath || 'terrad';
+    params.cliPath = params.cliPath || 'iqd';
   }
 
   private generateCommand(args: string) {
@@ -54,7 +54,7 @@ export class CLIKey extends Key {
   }
 
   /**
-   * Terra account address. `terra-` prefixed.
+   * Iq account address. `iq-` prefixed.
    */
   public get accAddress(): AccAddress {
     if (!this._accAddress) {
@@ -65,7 +65,7 @@ export class CLIKey extends Key {
   }
 
   /**
-   * Terra validator address. `terravaloper-` prefixed.
+   * Iq validator address. `iqvaloper-` prefixed.
    */
   public get valAddress(): ValAddress {
     if (!this._accAddress) {

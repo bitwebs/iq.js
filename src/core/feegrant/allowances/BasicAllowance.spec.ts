@@ -4,27 +4,27 @@ import { BasicAllowance } from './BasicAllowance';
 describe('BasicAllowance', () => {
   it('both set', () => {
     const now = new Date();
-    const ba = new BasicAllowance('1000uluna', now);
+    const ba = new BasicAllowance('1000ubiq', now);
 
-    expect(ba.toData().spend_limit).toEqual(new Coins('1000uluna').toData());
+    expect(ba.toData().spend_limit).toEqual(new Coins('1000ubiq').toData());
     expect(ba.toData().expiration).toEqual(now.toISOString());
-    expect(ba.toProto().spendLimit).toEqual(new Coins('1000uluna').toProto());
+    expect(ba.toProto().spendLimit).toEqual(new Coins('1000ubiq').toProto());
     expect(ba.toProto().expiration).toEqual(now);
     expect(ba.toAmino().value.spend_limit).toEqual(
-      new Coins('1000uluna').toAmino()
+      new Coins('1000ubiq').toAmino()
     );
     expect(ba.toAmino().value.expiration).toEqual(now.toISOString());
   });
 
   it('spend_limit only', () => {
-    const ba = new BasicAllowance('1000uluna', undefined);
+    const ba = new BasicAllowance('1000ubiq', undefined);
 
-    expect(ba.toData().spend_limit).toEqual(new Coins('1000uluna').toData());
+    expect(ba.toData().spend_limit).toEqual(new Coins('1000ubiq').toData());
     expect(ba.toData().expiration).toBeUndefined();
-    expect(ba.toProto().spendLimit).toEqual(new Coins('1000uluna').toProto());
+    expect(ba.toProto().spendLimit).toEqual(new Coins('1000ubiq').toProto());
     expect(ba.toProto().expiration).toBeUndefined();
     expect(ba.toAmino().value.spend_limit).toEqual(
-      new Coins('1000uluna').toAmino()
+      new Coins('1000ubiq').toAmino()
     );
     expect(ba.toAmino().value.expiration).toBeUndefined();
   });
@@ -42,8 +42,8 @@ describe('BasicAllowance', () => {
   });
 
   it('spend_limit has zero amount', () => {
-    expect(() => new BasicAllowance('1uluna,-1uusd', undefined)).toThrowError();
-    expect(() => new BasicAllowance('0ukrw', undefined)).toThrowError();
+    expect(() => new BasicAllowance('1ubiq,-1ubusd', undefined)).toThrowError();
+    expect(() => new BasicAllowance('0ubkrw', undefined)).toThrowError();
     expect(() => new BasicAllowance('-1204unok', undefined)).toThrowError();
   });
 

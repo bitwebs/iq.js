@@ -1,7 +1,7 @@
 import { JSONSerializable } from '../../../util/json';
 import { AccAddress } from '../../bech32';
 import { Any } from '@web4/iq.proto/google/protobuf/any';
-import { MsgStoreCode as MsgStoreCode_pb } from '@web4/iq.proto/terra/wasm/v1beta1/tx';
+import { MsgStoreCode as MsgStoreCode_pb } from '@web4/iq.proto/iq/wasm/v1beta1/tx';
 
 export class MsgStoreCode extends JSONSerializable<
   MsgStoreCode.Amino,
@@ -51,7 +51,7 @@ export class MsgStoreCode extends JSONSerializable<
 
   public packAny(): Any {
     return Any.fromPartial({
-      typeUrl: '/terra.wasm.v1beta1.MsgStoreCode',
+      typeUrl: '/iq.wasm.v1beta1.MsgStoreCode',
       value: MsgStoreCode_pb.encode(this.toProto()).finish(),
     });
   }
@@ -68,7 +68,7 @@ export class MsgStoreCode extends JSONSerializable<
   public toData(): MsgStoreCode.Data {
     const { sender, wasm_byte_code } = this;
     return {
-      '@type': '/terra.wasm.v1beta1.MsgStoreCode',
+      '@type': '/iq.wasm.v1beta1.MsgStoreCode',
       sender,
       wasm_byte_code,
     };
@@ -85,7 +85,7 @@ export namespace MsgStoreCode {
   }
 
   export interface Data {
-    '@type': '/terra.wasm.v1beta1.MsgStoreCode';
+    '@type': '/iq.wasm.v1beta1.MsgStoreCode';
     sender: AccAddress;
     wasm_byte_code: string;
   }

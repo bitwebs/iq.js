@@ -2,7 +2,7 @@ import { JSONSerializable, removeNull } from '../../../util/json';
 import { AccAddress } from '../../bech32';
 import { Coins } from '../../Coins';
 import { Any } from '@web4/iq.proto/google/protobuf/any';
-import { MsgExecuteContract as MsgExecuteContract_pb } from '@web4/iq.proto/terra/wasm/v1beta1/tx';
+import { MsgExecuteContract as MsgExecuteContract_pb } from '@web4/iq.proto/iq/wasm/v1beta1/tx';
 
 export class MsgExecuteContract extends JSONSerializable<
   MsgExecuteContract.Amino,
@@ -74,7 +74,7 @@ export class MsgExecuteContract extends JSONSerializable<
 
   public packAny(): Any {
     return Any.fromPartial({
-      typeUrl: '/terra.wasm.v1beta1.MsgExecuteContract',
+      typeUrl: '/iq.wasm.v1beta1.MsgExecuteContract',
       value: MsgExecuteContract_pb.encode(this.toProto()).finish(),
     });
   }
@@ -98,7 +98,7 @@ export class MsgExecuteContract extends JSONSerializable<
   public toData(): MsgExecuteContract.Data {
     const { sender, contract, execute_msg, coins } = this;
     return {
-      '@type': '/terra.wasm.v1beta1.MsgExecuteContract',
+      '@type': '/iq.wasm.v1beta1.MsgExecuteContract',
       sender,
       contract,
       execute_msg,
@@ -119,7 +119,7 @@ export namespace MsgExecuteContract {
   }
 
   export interface Data {
-    '@type': '/terra.wasm.v1beta1.MsgExecuteContract';
+    '@type': '/iq.wasm.v1beta1.MsgExecuteContract';
     sender: AccAddress;
     contract: AccAddress;
     execute_msg: object;

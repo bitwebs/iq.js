@@ -49,8 +49,8 @@ describe('StakingAPI', () => {
   it('delegations (delegator & validator)', async () => {
     const delegations = await staking
       .delegations(
-        'terra1rk6tvacasnnyssfnn00zl7wz43pjnpn7vayqv6',
-        'terravaloper1vk20anceu6h9s00d27pjlvslz3avetkvnwmr35'
+        'iq1rk6tvacasnnyssfnn00zl7wz43pjnpn7vayqv6',
+        'iqvaloper1vk20anceu6h9s00d27pjlvslz3avetkvnwmr35'
       )
       .then(v => v[0]);
 
@@ -59,7 +59,7 @@ describe('StakingAPI', () => {
 
   it('delegations (delegator)', async () => {
     const delegations = await staking
-      .delegations('terra1rk6tvacasnnyssfnn00zl7wz43pjnpn7vayqv6')
+      .delegations('iq1rk6tvacasnnyssfnn00zl7wz43pjnpn7vayqv6')
       .then(v => v[0]);
 
     checkDelegations(delegations);
@@ -69,7 +69,7 @@ describe('StakingAPI', () => {
     const delegations = await staking
       .delegations(
         undefined,
-        'terravaloper1vk20anceu6h9s00d27pjlvslz3avetkvnwmr35' // node0
+        'iqvaloper1vk20anceu6h9s00d27pjlvslz3avetkvnwmr35' // node0
       )
       .then(v => v[0]);
 
@@ -82,7 +82,7 @@ describe('StakingAPI', () => {
 
   it('redelegations', async () => {
     const redelegations = await staking
-      .redelegations('terra1rk6tvacasnnyssfnn00zl7wz43pjnpn7vayqv6') // manual faucet
+      .redelegations('iq1rk6tvacasnnyssfnn00zl7wz43pjnpn7vayqv6') // manual faucet
       .then(v => v[0]);
 
     expect(redelegations).toContainEqual({
@@ -104,8 +104,8 @@ describe('StakingAPI', () => {
   it('unbondingDelegations (delegator & validator)', async () => {
     const unbondings = await staking
       .unbondingDelegations(
-        'terra1rk6tvacasnnyssfnn00zl7wz43pjnpn7vayqv6', // manual faucet
-        'terravaloper1vk20anceu6h9s00d27pjlvslz3avetkvnwmr35' // node0
+        'iq1rk6tvacasnnyssfnn00zl7wz43pjnpn7vayqv6', // manual faucet
+        'iqvaloper1vk20anceu6h9s00d27pjlvslz3avetkvnwmr35' // node0
       )
       .then(v => v[0]);
 
@@ -115,7 +115,7 @@ describe('StakingAPI', () => {
   it('unbondingDelegations (delegator)', async () => {
     const unbondings = await staking
       .unbondingDelegations(
-        'terra1rk6tvacasnnyssfnn00zl7wz43pjnpn7vayqv6',
+        'iq1rk6tvacasnnyssfnn00zl7wz43pjnpn7vayqv6',
         undefined
       )
       .then(v => v[0]);
@@ -127,7 +127,7 @@ describe('StakingAPI', () => {
     const unbondings = await staking
       .unbondingDelegations(
         undefined,
-        'terravaloper1vk20anceu6h9s00d27pjlvslz3avetkvnwmr35' // node0
+        'iqvaloper1vk20anceu6h9s00d27pjlvslz3avetkvnwmr35' // node0
       )
       .then(v => v[0]);
 

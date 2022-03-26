@@ -4,7 +4,7 @@ import { AccAddress, ValAddress } from '../../bech32';
 import { MsgAggregateExchangeRatePrevote } from './MsgAggregateExchangeRatePrevote';
 import { Coins } from '../../Coins';
 import { Any } from '@web4/iq.proto/google/protobuf/any';
-import { MsgAggregateExchangeRateVote as MsgAggregateExchangeRateVote_pb } from '@web4/iq.proto/terra/oracle/v1beta1/tx';
+import { MsgAggregateExchangeRateVote as MsgAggregateExchangeRateVote_pb } from '@web4/iq.proto/iq/oracle/v1beta1/tx';
 
 /**
  * Calculates the aggregate vote hash
@@ -84,7 +84,7 @@ export class MsgAggregateExchangeRateVote extends JSONSerializable<
   public toData(): MsgAggregateExchangeRateVote.Data {
     const { exchange_rates, salt, feeder, validator } = this;
     return {
-      '@type': '/terra.oracle.v1beta1.MsgAggregateExchangeRateVote',
+      '@type': '/iq.oracle.v1beta1.MsgAggregateExchangeRateVote',
       exchange_rates: exchange_rates.toDecCoins().toString(),
       salt,
       feeder,
@@ -139,7 +139,7 @@ export class MsgAggregateExchangeRateVote extends JSONSerializable<
 
   public packAny(): Any {
     return Any.fromPartial({
-      typeUrl: '/terra.oracle.v1beta1.MsgAggregateExchangeRateVote',
+      typeUrl: '/iq.oracle.v1beta1.MsgAggregateExchangeRateVote',
       value: MsgAggregateExchangeRateVote_pb.encode(this.toProto()).finish(),
     });
   }
@@ -163,7 +163,7 @@ export namespace MsgAggregateExchangeRateVote {
   }
 
   export interface Data {
-    '@type': '/terra.oracle.v1beta1.MsgAggregateExchangeRateVote';
+    '@type': '/iq.oracle.v1beta1.MsgAggregateExchangeRateVote';
     exchange_rates: string;
     salt: string;
     feeder: AccAddress;

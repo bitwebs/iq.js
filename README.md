@@ -1,13 +1,13 @@
 <p>&nbsp;</p>
 <p align="center">
-<img src="https://raw.githubusercontent.com/bitwebs/iq.js/master/img/terrajs.svg" width=500>
+<img src="https://raw.githubusercontent.com/bitwebs/iq.js/master/img/iqjs.svg" width=500>
 </p>
 
 <p align="center">
-The JavaScript SDK for Terra
+The JavaScript SDK for Iq
 </p>
 
-![diagram](https://raw.githubusercontent.com/bitwebs/iq.js/master/img/terrajs-diagram.png)
+![diagram](https://raw.githubusercontent.com/bitwebs/iq.js/master/img/iqjs-diagram.png)
 
 <br/>
 
@@ -17,10 +17,10 @@ The JavaScript SDK for Terra
 </p>
 
 <p align="center">
-  <a href="https://docs.terra.money/docs/develop/sdks/terra-js/README.html"><strong>Explore the Docs »</strong></a>
+  <a href="https://docs.iq.money/docs/develop/sdks/iq-js/README.html"><strong>Explore the Docs »</strong></a>
   <br />
   <br/>
-  <a href="https://docs.terra.money/docs/develop/sdks/terra-js/common-examples.html">Examples</a>
+  <a href="https://docs.iq.money/docs/develop/sdks/iq-js/common-examples.html">Examples</a>
   ·
   <a href="https://bitwebs.github.io/iq.js/">API Reference</a>
   ·
@@ -29,17 +29,17 @@ The JavaScript SDK for Terra
   <a href="https://github.com/bitwebs/iq.js">GitHub</a>
 </p>
 
-Terra.js a JavaScript SDK for writing applications that interact with the Terra blockchain from either Node.js, browser, or React Native environments and provides simple abstractions over core data structures, serialization, key management, and API request generation.
+Iq.js a JavaScript SDK for writing applications that interact with the Iq blockchain from either Node.js, browser, or React Native environments and provides simple abstractions over core data structures, serialization, key management, and API request generation.
 
 ## Features
 
 - **Written in TypeScript**, with type definitions
-- Versatile support for [key management](https://docs.terra.money/docs/develop/sdks/terra-js/keys.html) solutions
+- Versatile support for [key management](https://docs.iq.money/docs/develop/sdks/iq-js/keys.html) solutions
 - Works in Node.js, in the browser, and React Native
-- Exposes the Terra API through [`LCDClient`](https://docs.terra.money/docs/develop/sdks/terra-js/query-data.html)
+- Exposes the Iq API through [`LCDClient`](https://docs.iq.money/docs/develop/sdks/iq-js/query-data.html)
 - Parses responses into native JavaScript types
 
-We highly suggest using Terra.js with TypeScript, or JavaScript in a code editor that has support for type declarations, so you can take advantage of the helpful type hints that are included with the package.
+We highly suggest using Iq.js with TypeScript, or JavaScript in a code editor that has support for type declarations, so you can take advantage of the helpful type hints that are included with the package.
 
 ## Installation
 
@@ -51,7 +51,7 @@ npm install @web4/iq.js
 
 ## Usage
 
-Terra.js can be use in Node.js, as well as inside the browser. Please check the [docs](https://docs.terra.money/docs/develop/sdks/terra-js/README.html) for notes on how to get up and running.
+Iq.js can be use in Node.js, as well as inside the browser. Please check the [docs](https://docs.iq.money/docs/develop/sdks/iq-js/README.html) for notes on how to get up and running.
 
 ### Getting blockchain data
 
@@ -59,27 +59,27 @@ Terra.js can be use in Node.js, as well as inside the browser. Please check the 
 import { LCDClient, Coin } from '@web4/iq.js';
 
 // connect to bombay testnet
-const terra = new LCDClient({
+const iq = new LCDClient({
   URL: 'https://mcafee-lcd.iqchain.network',
   chainID: 'bombay-12',
 });
 
-// To use LocalTerra
-// const terra = new LCDClient({
+// To use LocalIq
+// const iq = new LCDClient({
 //   URL: 'http://localhost:1317',
-//   chainID: 'localterra'
+//   chainID: 'localiq'
 // });
 
-// get the current swap rate from 1 TerraUSD to TerraKRW
-const offerCoin = new Coin('uusd', '1000000');
-terra.market.swapRate(offerCoin, 'ukrw').then(c => {
+// get the current swap rate from 1 IqBUSD to IqBKRW
+const offerCoin = new Coin('ubusd', '1000000');
+iq.market.swapRate(offerCoin, 'ubkrw').then(c => {
   console.log(`${offerCoin.toString()} can be swapped for ${c.toString()}`);
 });
 ```
 
 ### Broadcasting transactions
 
-First, [get](https://faucet.terra.money/) some testnet tokens for `terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v`, or use [LocalTerra](https://www.github.com/bitwebs/LocalTerra).
+First, [get](https://faucet.iq.money/) some testnet tokens for `iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v`, or use [LocalIq](https://www.github.com/bitwebs/LocalIq).
 
 ```ts
 import { LCDClient, MsgSend, MnemonicKey } from '@web4/iq.js';
@@ -91,26 +91,26 @@ const mk = new MnemonicKey({
 });
 
 // connect to bombay testnet
-const terra = new LCDClient({
+const iq = new LCDClient({
   URL: 'https://mcafee-lcd.iqchain.network',
   chainID: 'bombay-12',
 });
 
-// To use LocalTerra
-// const terra = new LCDClient({
+// To use LocalIq
+// const iq = new LCDClient({
 //   URL: 'http://localhost:1317',
-//   chainID: 'localterra'
+//   chainID: 'localiq'
 // });
 
 // a wallet can be created out of any key
 // wallets abstract transaction building
-const wallet = terra.wallet(mk);
+const wallet = iq.wallet(mk);
 
 // create a simple message that moves coin balances
 const send = new MsgSend(
-  'terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
-  'terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp',
-  { uluna: 1000000, ukrw: 1230201, uusd: 1312029 }
+  'iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
+  'iq17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp',
+  { ubiq: 1000000, ubkrw: 1230201, ubusd: 1312029 }
 );
 
 wallet
@@ -118,15 +118,15 @@ wallet
     msgs: [send],
     memo: 'test from iq.js!',
   })
-  .then(tx => terra.tx.broadcast(tx))
+  .then(tx => iq.tx.broadcast(tx))
   .then(result => {
     console.log(`TX hash: ${result.txhash}`);
   });
 ```
 
-## Terra.js in the browser
+## Iq.js in the browser
 
-You can access all the objects of the `@web4/iq.js` from the global `Terra` object if you load Terra.js with a `<script>` tag.
+You can access all the objects of the `@web4/iq.js` from the global `Iq` object if you load Iq.js with a `<script>` tag.
 
 Include the following in your browser:
 
@@ -139,9 +139,9 @@ Include the following in your browser:
 
 You can find a small JSFiddle example that refreshes current Oracle votes [here](https://jsfiddle.net/tLm1b527/1/).
 
-## Terra.js in React Native
+## Iq.js in React Native
 
-In order to use Terra.js inside React Native, you need to add the [`node-libs-react-native`](https://github.com/parshap/node-libs-react-native) package and [`react-native-get-random-values`](https://github.com/LinusU/react-native-get-random-values) package to your React Native app's `package.json`.
+In order to use Iq.js inside React Native, you need to add the [`node-libs-react-native`](https://github.com/parshap/node-libs-react-native) package and [`react-native-get-random-values`](https://github.com/LinusU/react-native-get-random-values) package to your React Native app's `package.json`.
 
 ```sh
 yarn add node-libs-react-native react-native-get-random-values
@@ -171,13 +171,13 @@ module.exports {
 
 This software is licensed under the MIT license. See [LICENSE](./LICENSE) for full disclosure.
 
-© 2020 Terraform Labs, PTE.
+© 2020 Iqform Labs, PTE.
 
 <hr/>
 
 <p>&nbsp;</p>
 <p align="center">
-    <a href="https://terra.money/"><img src="https://assets.website-files.com/611153e7af981472d8da199c/61794f2b6b1c7a1cb9444489_symbol-terra-blue.svg" align="center" width=200/></a>
+    <a href="https://iq.money/"><img src="https://assets.website-files.com/611153e7af981472d8da199c/61794f2b6b1c7a1cb9444489_symbol-iq-blue.svg" align="center" width=200/></a>
 </p>
 <div align="center">
   <sub><em>Powering the innovation of money.</em></sub>

@@ -19,9 +19,9 @@ async function main() {
 
   // create a simple message that moves coin balances
   const send = new MsgSend(
-    'terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
-    'terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp',
-    { uluna: 1312029 }
+    'iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
+    'iq17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp',
+    { ubiq: 1312029 }
   );
 
   wallet

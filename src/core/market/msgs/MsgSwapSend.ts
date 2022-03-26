@@ -3,7 +3,7 @@ import { Coin } from '../../Coin';
 import { Denom } from '../../Denom';
 import { AccAddress } from '../../bech32';
 import { Any } from '@web4/iq.proto/google/protobuf/any';
-import { MsgSwapSend as MsgSwapSend_pb } from '@web4/iq.proto/terra/market/v1beta1/tx';
+import { MsgSwapSend as MsgSwapSend_pb } from '@web4/iq.proto/iq/market/v1beta1/tx';
 
 /**
  * Executes a market swap send between 2 denominations at the exchange rate registered by the
@@ -76,7 +76,7 @@ export class MsgSwapSend extends JSONSerializable<
 
   public packAny(): Any {
     return Any.fromPartial({
-      typeUrl: '/terra.market.v1beta1.MsgSwapSend',
+      typeUrl: '/iq.market.v1beta1.MsgSwapSend',
       value: MsgSwapSend_pb.encode(this.toProto()).finish(),
     });
   }
@@ -98,7 +98,7 @@ export class MsgSwapSend extends JSONSerializable<
   public toData(): MsgSwapSend.Data {
     const { from_address, to_address, offer_coin, ask_denom } = this;
     return {
-      '@type': '/terra.market.v1beta1.MsgSwapSend',
+      '@type': '/iq.market.v1beta1.MsgSwapSend',
       from_address,
       to_address,
       offer_coin: offer_coin.toData(),
@@ -119,7 +119,7 @@ export namespace MsgSwapSend {
   }
 
   export interface Data {
-    '@type': '/terra.market.v1beta1.MsgSwapSend';
+    '@type': '/iq.market.v1beta1.MsgSwapSend';
     from_address: AccAddress;
     to_address: AccAddress;
     offer_coin: Coin.Data;

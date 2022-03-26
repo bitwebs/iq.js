@@ -4,7 +4,7 @@ import { Denom } from '../Denom';
 import {
   ExchangeRateTuple as ExchangeRateTuple_pb,
   AggregateExchangeRateVote as AggregateExchangeRateVote_pb,
-} from '@web4/iq.proto/terra/oracle/v1beta1/oracle';
+} from '@web4/iq.proto/iq/oracle/v1beta1/oracle';
 import { Numeric, Dec } from '../numeric';
 
 /**
@@ -16,7 +16,7 @@ export class AggregateExchangeRateVote extends JSONSerializable<
   AggregateExchangeRateVote.Proto
 > {
   /**
-   * @param exchange_rate_tuples exchange rates for LUNA
+   * @param exchange_rate_tuples exchange rates for BIQ
    * @param voter validator
    */
   constructor(

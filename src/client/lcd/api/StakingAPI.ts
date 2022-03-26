@@ -23,7 +23,7 @@ export interface StakingParams {
 
   historical_entries: number;
 
-  /** The denomination used as the staking token (probably Luna). */
+  /** The denomination used as the staking token (probably Biq). */
   bond_denom: Denom;
 }
 
@@ -270,8 +270,8 @@ export class StakingAPI extends BaseAPI {
     return this.c
       .get<{ pool: StakingPool.Data }>(`/cosmos/staking/v1beta1/pool`, params)
       .then(({ pool: d }) => ({
-        bonded_tokens: new Coin('uluna', d.bonded_tokens),
-        not_bonded_tokens: new Coin('uluna', d.not_bonded_tokens),
+        bonded_tokens: new Coin('ubiq', d.bonded_tokens),
+        not_bonded_tokens: new Coin('ubiq', d.not_bonded_tokens),
       }));
   }
 

@@ -2,7 +2,7 @@ import { JSONSerializable, removeNull } from '../../../util/json';
 import { AccAddress } from '../../bech32';
 import { Coins } from '../../Coins';
 import { Any } from '@web4/iq.proto/google/protobuf/any';
-import { MsgInstantiateContract as MsgInstantiateContract_pb } from '@web4/iq.proto/terra/wasm/v1beta1/tx';
+import { MsgInstantiateContract as MsgInstantiateContract_pb } from '@web4/iq.proto/iq/wasm/v1beta1/tx';
 import * as Long from 'long';
 
 export class MsgInstantiateContract extends JSONSerializable<
@@ -84,7 +84,7 @@ export class MsgInstantiateContract extends JSONSerializable<
 
   public packAny(): Any {
     return Any.fromPartial({
-      typeUrl: '/terra.wasm.v1beta1.MsgInstantiateContract',
+      typeUrl: '/iq.wasm.v1beta1.MsgInstantiateContract',
       value: MsgInstantiateContract_pb.encode(this.toProto()).finish(),
     });
   }
@@ -111,7 +111,7 @@ export class MsgInstantiateContract extends JSONSerializable<
   public toData(): MsgInstantiateContract.Data {
     const { sender, admin, code_id, init_msg, init_coins } = this;
     return {
-      '@type': '/terra.wasm.v1beta1.MsgInstantiateContract',
+      '@type': '/iq.wasm.v1beta1.MsgInstantiateContract',
       sender,
       admin: admin || '',
       code_id: code_id.toFixed(),
@@ -134,7 +134,7 @@ export namespace MsgInstantiateContract {
   }
 
   export interface Data {
-    '@type': '/terra.wasm.v1beta1.MsgInstantiateContract';
+    '@type': '/iq.wasm.v1beta1.MsgInstantiateContract';
     sender: AccAddress;
     admin: AccAddress;
     code_id: string;

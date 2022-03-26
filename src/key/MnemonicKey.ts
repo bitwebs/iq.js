@@ -1,10 +1,10 @@
-// Adapted from https://github.com/bitwebs/terra-js/blob/master/src/utils/keyUtils.ts
+// Adapted from https://github.com/bitwebs/iq.js/blob/master/src/utils/keyUtils.ts
 
 import * as bip32 from 'bip32';
 import * as bip39 from 'bip39';
 import { RawKey } from './RawKey';
 
-export const LUNA_COIN_TYPE = 330;
+export const BIQ_COIN_TYPE = 330;
 
 interface MnemonicKeyOptions {
   /**
@@ -23,7 +23,7 @@ interface MnemonicKeyOptions {
   index?: number;
 
   /**
-   * Coin type. Default is LUNA, 330.
+   * Coin type. Default is BIQ, 330.
    */
   coinType?: number;
 }
@@ -31,7 +31,7 @@ interface MnemonicKeyOptions {
 const DEFAULT_OPTIONS = {
   account: 0,
   index: 0,
-  coinType: LUNA_COIN_TYPE,
+  coinType: BIQ_COIN_TYPE,
 };
 
 /**
@@ -78,9 +78,9 @@ export class MnemonicKey extends RawKey {
     }
     const seed: Buffer = bip39.mnemonicToSeedSync(mnemonic);
     const masterKey = bip32.fromSeed(seed);
-    const hdPathLuna = `m/44'/${coinType}'/${account}'/0/${index}`;
-    const terraHD = masterKey.derivePath(hdPathLuna);
-    const privateKey = terraHD.privateKey;
+    const hdPathBiq = `m/44'/${coinType}'/${account}'/0/${index}`;
+    const iqHD = masterKey.derivePath(hdPathBiq);
+    const privateKey = iqHD.privateKey;
 
     if (!privateKey) {
       throw new Error('Failed to derive key pair');

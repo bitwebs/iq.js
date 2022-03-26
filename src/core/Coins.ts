@@ -30,7 +30,7 @@ export class Coins
   /**
    * Converts the Coins information to a comma-separated list.
    *
-   * Eg: `15000ukrw,12000uluna`
+   * Eg: `15000ubkrw,12000ubiq`
    */
   public toString(): string {
     return this.toArray()
@@ -41,7 +41,7 @@ export class Coins
   /**
    * Converts a comma-separated list of coins to a Coins object
    *
-   * Eg. `1500ukrw,12302uluna`
+   * Eg. `1500ubkrw,12302ubiq`
    *
    * @param str comma-separated list of coins
    */

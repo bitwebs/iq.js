@@ -24,7 +24,7 @@ export namespace Account {
     switch (data['@type']) {
       case '/cosmos.auth.v1beta1.BaseAccount':
         return BaseAccount.fromData(data);
-      case '/terra.vesting.v1beta1.LazyGradedVestingAccount':
+      case '/iq.vesting.v1beta1.LazyGradedVestingAccount':
         return LazyGradedVestingAccount.fromData(data);
     }
   }
@@ -33,7 +33,7 @@ export namespace Account {
     const typeUrl = accountAny.typeUrl;
     if (typeUrl === '/cosmos.auth.v1beta1.BaseAccount') {
       return BaseAccount.unpackAny(accountAny);
-    } else if (typeUrl === '/terra.vesting.v1beta1.LazyGradedVestingAccount') {
+    } else if (typeUrl === '/iq.vesting.v1beta1.LazyGradedVestingAccount') {
       return LazyGradedVestingAccount.unpackAny(accountAny);
     }
 

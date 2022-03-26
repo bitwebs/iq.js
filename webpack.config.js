@@ -32,7 +32,7 @@ const webConfig = {
   output: {
     filename: 'bundle.js',
     libraryTarget: 'umd',
-    library: 'Terra',
+    library: 'Iq',
   },
   resolve: {
     ...commonConfig.resolve,

@@ -13,7 +13,7 @@
       "exchange_rate": "5.606272651951189670"
     },
     {
-      "denom": "ucny",
+      "denom": "ubcny",
       "exchange_rate": "39.452837979258993140"
     },
     {
@@ -25,7 +25,7 @@
       "exchange_rate": "5.139663623776370157"
     },
     {
-      "denom": "ugbp",
+      "denom": "ubgbp",
       "exchange_rate": "4.408410669174041069"
     },
     {
@@ -37,15 +37,15 @@
       "exchange_rate": "455.278089535410089886"
     },
     {
-      "denom": "ujpy",
+      "denom": "ubjpy",
       "exchange_rate": "682.913652146188456601"
     },
     {
-      "denom": "ukrw",
+      "denom": "ubkrw",
       "exchange_rate": "7212.006856855468600762"
     },
     {
-      "denom": "umnt",
+      "denom": "ubmnt",
       "exchange_rate": "17546.449467252153327358"
     },
     {
@@ -53,7 +53,7 @@
       "exchange_rate": "52.260211155579785444"
     },
     {
-      "denom": "usdr",
+      "denom": "bubsdr",
       "exchange_rate": "4.283053019813641797"
     },
     {
@@ -69,9 +69,9 @@
       "exchange_rate": "193.148280408961856289"
     },
     {
-      "denom": "uusd",
+      "denom": "ubusd",
       "exchange_rate": "6.170382074072986394"
     }
   ],
-  "voter": "terravaloper1krj7amhhagjnyg2tkkuh6l0550y733jnjnnlzy"
+  "voter": "iqvaloper1krj7amhhagjnyg2tkkuh6l0550y733jnjnnlzy"
 }

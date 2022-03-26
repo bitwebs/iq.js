@@ -62,11 +62,11 @@ function revoke(granter: Wallet, grantee: Wallet, msg_type_url: string) {
 async function main() {
   const client = new LCDClient({
     URL: 'http://localhost:1317',
-    chainID: 'localterra',
-    gasPrices: '169.77ukrw',
+    chainID: 'localiq',
+    gasPrices: '169.77ubkrw',
   });
 
-  // Granter (terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v)
+  // Granter (iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v)
   const granter = client.wallet(
     new MnemonicKey({
       mnemonic:
@@ -74,7 +74,7 @@ async function main() {
     })
   );
 
-  // Grantee (terra17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp)
+  // Grantee (iq17lmam6zguazs5q5u6z5mmx76uj63gldnse2pdp)
   const grantee = client.wallet(
     new MnemonicKey({
       mnemonic:
@@ -87,7 +87,7 @@ async function main() {
     granter,
     grantee,
     // Set enough spend limit since it will be decreased upon every MsgSend transactions
-    '1000000000000000ukrw',
+    '1000000000000000ubkrw',
     // expire after 100 year
     new Date('2050-01-01')
   )
@@ -106,8 +106,8 @@ async function main() {
     granter,
     grantee,
     // Test3
-    'terra1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95',
-    '2000000000000ukrw'
+    'iq1757tkx08n0cqrw7p86ny9lnxsqeth0wgp0em95',
+    '2000000000000ubkrw'
   )
     .then(tx => client.tx.broadcast(tx))
     .then(console.info)

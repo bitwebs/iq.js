@@ -1,7 +1,7 @@
 import { JSONSerializable } from '../../../util/json';
 import { AccAddress } from '../../bech32';
 import { Any } from '@web4/iq.proto/google/protobuf/any';
-import { MsgUpdateContractAdmin as MsgUpdateContractAdmin_pb } from '@web4/iq.proto/terra/wasm/v1beta1/tx';
+import { MsgUpdateContractAdmin as MsgUpdateContractAdmin_pb } from '@web4/iq.proto/iq/wasm/v1beta1/tx';
 
 export class MsgUpdateContractAdmin extends JSONSerializable<
   MsgUpdateContractAdmin.Amino,
@@ -63,7 +63,7 @@ export class MsgUpdateContractAdmin extends JSONSerializable<
 
   public packAny(): Any {
     return Any.fromPartial({
-      typeUrl: '/terra.wasm.v1beta1.MsgUpdateContractAdmin',
+      typeUrl: '/iq.wasm.v1beta1.MsgUpdateContractAdmin',
       value: MsgUpdateContractAdmin_pb.encode(this.toProto()).finish(),
     });
   }
@@ -84,7 +84,7 @@ export class MsgUpdateContractAdmin extends JSONSerializable<
   public toData(): MsgUpdateContractAdmin.Data {
     const { admin, new_admin, contract } = this;
     return {
-      '@type': '/terra.wasm.v1beta1.MsgUpdateContractAdmin',
+      '@type': '/iq.wasm.v1beta1.MsgUpdateContractAdmin',
       admin,
       new_admin,
       contract,
@@ -103,7 +103,7 @@ export namespace MsgUpdateContractAdmin {
   }
 
   export interface Data {
-    '@type': '/terra.wasm.v1beta1.MsgUpdateContractAdmin';
+    '@type': '/iq.wasm.v1beta1.MsgUpdateContractAdmin';
     admin: AccAddress;
     new_admin: AccAddress;
     contract: AccAddress;

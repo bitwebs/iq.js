@@ -5,7 +5,7 @@ import { Any } from '@web4/iq.proto/google/protobuf/any';
 import { MsgSend as MsgSend_pb } from '@web4/iq.proto/cosmos/bank/v1beta1/tx';
 
 /**
- * A basic message for sending [[Coins]] between Terra accounts.
+ * A basic message for sending [[Coins]] between Iq accounts.
  */
 export class MsgSend extends JSONSerializable<
   MsgSend.Amino,

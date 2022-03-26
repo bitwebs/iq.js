@@ -270,9 +270,9 @@ export namespace Msg {
         return MsgVoteWeighted.fromData(data);
 
       // market
-      case '/terra.market.v1beta1.MsgSwap':
+      case '/iq.market.v1beta1.MsgSwap':
         return MsgSwap.fromData(data);
-      case '/terra.market.v1beta1.MsgSwapSend':
+      case '/iq.market.v1beta1.MsgSwapSend':
         return MsgSwapSend.fromData(data);
 
       // authz
@@ -284,11 +284,11 @@ export namespace Msg {
         return MsgExecAuthorized.fromData(data);
 
       // oracle
-      case '/terra.oracle.v1beta1.MsgDelegateFeedConsent':
+      case '/iq.oracle.v1beta1.MsgDelegateFeedConsent':
         return MsgDelegateFeedConsent.fromData(data);
-      case '/terra.oracle.v1beta1.MsgAggregateExchangeRatePrevote':
+      case '/iq.oracle.v1beta1.MsgAggregateExchangeRatePrevote':
         return MsgAggregateExchangeRatePrevote.fromData(data);
-      case '/terra.oracle.v1beta1.MsgAggregateExchangeRateVote':
+      case '/iq.oracle.v1beta1.MsgAggregateExchangeRateVote':
         return MsgAggregateExchangeRateVote.fromData(data);
 
       // slashing
@@ -308,19 +308,19 @@ export namespace Msg {
         return MsgEditValidator.fromData(data);
 
       // wasm
-      case '/terra.wasm.v1beta1.MsgStoreCode':
+      case '/iq.wasm.v1beta1.MsgStoreCode':
         return MsgStoreCode.fromData(data);
-      case '/terra.wasm.v1beta1.MsgMigrateCode':
+      case '/iq.wasm.v1beta1.MsgMigrateCode':
         return MsgMigrateCode.fromData(data);
-      case '/terra.wasm.v1beta1.MsgInstantiateContract':
+      case '/iq.wasm.v1beta1.MsgInstantiateContract':
         return MsgInstantiateContract.fromData(data);
-      case '/terra.wasm.v1beta1.MsgExecuteContract':
+      case '/iq.wasm.v1beta1.MsgExecuteContract':
         return MsgExecuteContract.fromData(data);
-      case '/terra.wasm.v1beta1.MsgMigrateContract':
+      case '/iq.wasm.v1beta1.MsgMigrateContract':
         return MsgMigrateContract.fromData(data);
-      case '/terra.wasm.v1beta1.MsgUpdateContractAdmin':
+      case '/iq.wasm.v1beta1.MsgUpdateContractAdmin':
         return MsgUpdateContractAdmin.fromData(data);
-      case '/terra.wasm.v1beta1.MsgClearContractAdmin':
+      case '/iq.wasm.v1beta1.MsgClearContractAdmin':
         return MsgClearContractAdmin.fromData(data);
 
       // ibc-transfer
@@ -404,9 +404,9 @@ export namespace Msg {
         return MsgVote.unpackAny(proto);
 
       // market
-      case '/terra.market.v1beta1.MsgSwap':
+      case '/iq.market.v1beta1.MsgSwap':
         return MsgSwap.unpackAny(proto);
-      case '/terra.market.v1beta1.MsgSwapSend':
+      case '/iq.market.v1beta1.MsgSwapSend':
         return MsgSwapSend.unpackAny(proto);
 
       // authz
@@ -418,11 +418,11 @@ export namespace Msg {
         return MsgExecAuthorized.unpackAny(proto);
 
       // oracle
-      case '/terra.oracle.v1beta1.MsgDelegateFeedConsent':
+      case '/iq.oracle.v1beta1.MsgDelegateFeedConsent':
         return MsgDelegateFeedConsent.unpackAny(proto);
-      case '/terra.oracle.v1beta1.MsgAggregateExchangeRatePrevote':
+      case '/iq.oracle.v1beta1.MsgAggregateExchangeRatePrevote':
         return MsgAggregateExchangeRatePrevote.unpackAny(proto);
-      case '/terra.oracle.v1beta1.MsgAggregateExchangeRateVote':
+      case '/iq.oracle.v1beta1.MsgAggregateExchangeRateVote':
         return MsgAggregateExchangeRateVote.unpackAny(proto);
 
       // slashing
@@ -442,19 +442,19 @@ export namespace Msg {
         return MsgEditValidator.unpackAny(proto);
 
       // wasm
-      case '/terra.wasm.v1beta1.MsgStoreCode':
+      case '/iq.wasm.v1beta1.MsgStoreCode':
         return MsgStoreCode.unpackAny(proto);
-      case '/terra.wasm.v1beta1.MsgMigrateCode':
+      case '/iq.wasm.v1beta1.MsgMigrateCode':
         return MsgMigrateCode.unpackAny(proto);
-      case '/terra.wasm.v1beta1.MsgInstantiateContract':
+      case '/iq.wasm.v1beta1.MsgInstantiateContract':
         return MsgInstantiateContract.unpackAny(proto);
-      case '/terra.wasm.v1beta1.MsgExecuteContract':
+      case '/iq.wasm.v1beta1.MsgExecuteContract':
         return MsgExecuteContract.unpackAny(proto);
-      case '/terra.wasm.v1beta1.MsgMigrateContract':
+      case '/iq.wasm.v1beta1.MsgMigrateContract':
         return MsgMigrateContract.unpackAny(proto);
-      case '/terra.wasm.v1beta1.MsgUpdateContractAdmin':
+      case '/iq.wasm.v1beta1.MsgUpdateContractAdmin':
         return MsgUpdateContractAdmin.unpackAny(proto);
-      case '/terra.wasm.v1beta1.MsgClearContractAdmin':
+      case '/iq.wasm.v1beta1.MsgClearContractAdmin':
         return MsgClearContractAdmin.unpackAny(proto);
 
       // ibc-transfer

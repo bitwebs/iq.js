@@ -5,9 +5,9 @@ import { Any } from '@web4/iq.proto/google/protobuf/any';
 import { MsgUndelegate as MsgUndelegate_pb } from '@web4/iq.proto/cosmos/staking/v1beta1/tx';
 
 /**
- * A delegator can undelegate an amount of bonded Luna, and will begin the unbonding
+ * A delegator can undelegate an amount of bonded Biq, and will begin the unbonding
  * process for those funds. The unbonding process takes 21 days to complete, during
- * which the Luna cannot be transacted or swapped.
+ * which the Biq cannot be transacted or swapped.
  */
 export class MsgUndelegate extends JSONSerializable<
   MsgUndelegate.Amino,
@@ -17,7 +17,7 @@ export class MsgUndelegate extends JSONSerializable<
   /**
    * @param delegator_address delegator's account address
    * @param validator_address validator's operator address
-   * @param amount Luna to be undelegated
+   * @param amount Biq to be undelegated
    */
   constructor(
     public delegator_address: AccAddress,

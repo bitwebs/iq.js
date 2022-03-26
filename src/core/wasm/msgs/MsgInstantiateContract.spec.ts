@@ -1,19 +1,19 @@
 import { MsgInstantiateContract } from './MsgInstantiateContract';
 
 const msgWithAdmin = new MsgInstantiateContract(
-  'terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
-  'terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
+  'iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
+  'iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
   1,
   { count: 0 },
-  { uluna: 120400 }
+  { ubiq: 120400 }
 );
 
 const msgWithoutAdmin = new MsgInstantiateContract(
-  'terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
+  'iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v',
   undefined,
   1,
   { count: 0 },
-  { uluna: 120400 }
+  { ubiq: 120400 }
 );
 
 describe('MsgInstantiateContract', () => {
