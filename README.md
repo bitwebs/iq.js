@@ -1,8 +1,3 @@
-<p>&nbsp;</p>
-<p align="center">
-<img src="https://raw.githubusercontent.com/bitwebs/iq.js/master/img/iqjs.svg" width=500>
-</p>
-
 <p align="center">
 The JavaScript SDK for Iq
 </p>
@@ -70,7 +65,8 @@ const iq = new LCDClient({
 //   chainID: 'localiq'
 // });
 
-// get the current swap rate from 1 IqBUSD to IqBKRW
+// get the current swap rate from 1 BUSD to I
+BKRW
 const offerCoin = new Coin('ubusd', '1000000');
 iq.market.swapRate(offerCoin, 'ubkrw').then(c => {
   console.log(`${offerCoin.toString()} can be swapped for ${c.toString()}`);
@@ -171,14 +167,6 @@ module.exports {
 
 This software is licensed under the MIT license. See [LICENSE](./LICENSE) for full disclosure.
 
-© 2020 BitWeb Labs, PTE.
+© 2022 BitWeb Labs
 
 <hr/>
-
-<p>&nbsp;</p>
-<p align="center">
-    <a href="https://iqchain.network/"><img src="https://assets.website-files.com/611153e7af981472d8da199c/61794f2b6b1c7a1cb9444489_symbol-iq-blue.svg" align="center" width=200/></a>
-</p>
-<div align="center">
-  <sub><em>Powering the innovation of money.</em></sub>
-</div>
