@@ -1,8 +1,8 @@
 import { LCDClient } from '../src';
 
 async function main() {
-  const bombay = new LCDClient({
-    chainID: 'bombay-12',
+  const mcafee = new LCDClient({
+    chainID: 'mcafee-1',
     URL: 'https://mcafee-lcd.iqchain.network',
     gasPrices: { ubusd: 0.38 },
   });
@@ -10,7 +10,7 @@ async function main() {
   console.log(
     `Txs Page 1: ${JSON.stringify(
       (
-        await bombay.tx.search({
+        await mcafee.tx.search({
           events: [{ key: 'tx.height', value: '5947667' }],
           'pagination.limit': '100',
         })
@@ -21,7 +21,7 @@ async function main() {
   console.log(
     `Txs Page 2: ${JSON.stringify(
       (
-        await bombay.tx.search({
+        await mcafee.tx.search({
           events: [{ key: 'tx.height', value: '5947667' }],
           'pagination.limit': '50',
           'pagination.offset': '1',

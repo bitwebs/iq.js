@@ -32,8 +32,8 @@ async function main() {
     mk3.publicKey as SimplePublicKey,
   ]);
 
-  const bombay = new LCDClient({
-    chainID: 'bombay-12',
+  const mcafee = new LCDClient({
+    chainID: 'mcafee-1',
     URL: 'https://mcafee-lcd.iqchain.network',
     gasPrices: { ubusd: 0.38 },
   });
@@ -48,8 +48,8 @@ async function main() {
     { ubusd: 100000 }
   );
 
-  const accInfo = await bombay.auth.accountInfo(address);
-  const tx = await bombay.tx.create(
+  const accInfo = await mcafee.auth.accountInfo(address);
+  const tx = await mcafee.tx.create(
     [
       {
         address,
@@ -67,7 +67,7 @@ async function main() {
 
   const sig1 = await mk3.createSignatureAmino(
     new SignDoc(
-      bombay.config.chainID,
+      mcafee.config.chainID,
       accInfo.getAccountNumber(),
       accInfo.getSequenceNumber(),
       tx.auth_info,
@@ -77,7 +77,7 @@ async function main() {
 
   const sig2 = await mk2.createSignatureAmino(
     new SignDoc(
-      bombay.config.chainID,
+      mcafee.config.chainID,
       accInfo.getAccountNumber(),
       accInfo.getSequenceNumber(),
       tx.auth_info,
@@ -94,7 +94,7 @@ async function main() {
     ),
   ]);
   console.log(JSON.stringify(tx.toData()));
-  bombay.tx.broadcast(tx).then(console.log);
+  mcafee.tx.broadcast(tx).then(console.log);
 }
 
 main().catch(console.error);

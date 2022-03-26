@@ -1,7 +1,7 @@
 import { LCDClient } from '../src';
 
 async function main() {
-  const bombay = new LCDClient({
+  const mcafee = new LCDClient({
     chainID: 'localiq',
     URL: 'http://localhost:1317',
     gasPrices: { ubusd: 0.38 },
@@ -10,7 +10,7 @@ async function main() {
   console.log(
     `Txs Page 1: ${JSON.stringify(
       (
-        await bombay.tx.search({
+        await mcafee.tx.search({
           events: [{ key: 'tx.height', value: '12' }],
           'pagination.limit': '50',
         })

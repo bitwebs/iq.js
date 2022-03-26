@@ -17,10 +17,10 @@ The JavaScript SDK for Iq
 </p>
 
 <p align="center">
-  <a href="https://docs.iq.money/docs/develop/sdks/iq-js/README.html"><strong>Explore the Docs »</strong></a>
+  <a href="https://docs.iqchain.network/docs/develop/sdks/iq-js/README.html"><strong>Explore the Docs »</strong></a>
   <br />
   <br/>
-  <a href="https://docs.iq.money/docs/develop/sdks/iq-js/common-examples.html">Examples</a>
+  <a href="https://docs.iqchain.network/docs/develop/sdks/iq-js/common-examples.html">Examples</a>
   ·
   <a href="https://bitwebs.github.io/iq.js/">API Reference</a>
   ·
@@ -34,9 +34,9 @@ Iq.js a JavaScript SDK for writing applications that interact with the Iq blockc
 ## Features
 
 - **Written in TypeScript**, with type definitions
-- Versatile support for [key management](https://docs.iq.money/docs/develop/sdks/iq-js/keys.html) solutions
+- Versatile support for [key management](https://docs.iqchain.network/docs/develop/sdks/iq-js/keys.html) solutions
 - Works in Node.js, in the browser, and React Native
-- Exposes the Iq API through [`LCDClient`](https://docs.iq.money/docs/develop/sdks/iq-js/query-data.html)
+- Exposes the Iq API through [`LCDClient`](https://docs.iqchain.network/docs/develop/sdks/iq-js/query-data.html)
 - Parses responses into native JavaScript types
 
 We highly suggest using Iq.js with TypeScript, or JavaScript in a code editor that has support for type declarations, so you can take advantage of the helpful type hints that are included with the package.
@@ -51,17 +51,17 @@ npm install @web4/iq.js
 
 ## Usage
 
-Iq.js can be use in Node.js, as well as inside the browser. Please check the [docs](https://docs.iq.money/docs/develop/sdks/iq-js/README.html) for notes on how to get up and running.
+Iq.js can be use in Node.js, as well as inside the browser. Please check the [docs](https://docs.iqchain.network/docs/develop/sdks/iq-js/README.html) for notes on how to get up and running.
 
 ### Getting blockchain data
 
 ```ts
 import { LCDClient, Coin } from '@web4/iq.js';
 
-// connect to bombay testnet
+// connect to mcafee testnet
 const iq = new LCDClient({
   URL: 'https://mcafee-lcd.iqchain.network',
-  chainID: 'bombay-12',
+  chainID: 'mcafee-1',
 });
 
 // To use LocalIq
@@ -79,7 +79,7 @@ iq.market.swapRate(offerCoin, 'ubkrw').then(c => {
 
 ### Broadcasting transactions
 
-First, [get](https://faucet.iq.money/) some testnet tokens for `iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v`, or use [LocalIq](https://www.github.com/bitwebs/LocalIq).
+First, [get](https://faucet.iqchain.network/) some testnet tokens for `iq1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v`, or use [LocalIq](https://www.github.com/bitwebs/LocalIq).
 
 ```ts
 import { LCDClient, MsgSend, MnemonicKey } from '@web4/iq.js';
@@ -90,10 +90,10 @@ const mk = new MnemonicKey({
     'notice oak worry limit wrap speak medal online prefer cluster roof addict wrist behave treat actual wasp year salad speed social layer crew genius',
 });
 
-// connect to bombay testnet
+// connect to mcafee testnet
 const iq = new LCDClient({
   URL: 'https://mcafee-lcd.iqchain.network',
-  chainID: 'bombay-12',
+  chainID: 'mcafee-1',
 });
 
 // To use LocalIq
@@ -171,13 +171,13 @@ module.exports {
 
 This software is licensed under the MIT license. See [LICENSE](./LICENSE) for full disclosure.
 
-© 2020 Iqform Labs, PTE.
+© 2020 BitWeb Labs, PTE.
 
 <hr/>
 
 <p>&nbsp;</p>
 <p align="center">
-    <a href="https://iq.money/"><img src="https://assets.website-files.com/611153e7af981472d8da199c/61794f2b6b1c7a1cb9444489_symbol-iq-blue.svg" align="center" width=200/></a>
+    <a href="https://iqchain.network/"><img src="https://assets.website-files.com/611153e7af981472d8da199c/61794f2b6b1c7a1cb9444489_symbol-iq-blue.svg" align="center" width=200/></a>
 </p>
 <div align="center">
   <sub><em>Powering the innovation of money.</em></sub>

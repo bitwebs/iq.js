@@ -8,15 +8,15 @@ async function main() {
       'notice oak worry limit wrap speak medal online prefer cluster roof addict wrist behave treat actual wasp year salad speed social layer crew genius',
   });
 
-  const bombay = new LCDClient({
-    chainID: 'bombay-12',
+  const mcafee = new LCDClient({
+    chainID: 'mcafee-1',
     URL: 'https://mcafee-lcd.iqchain.network',
     gasPrices: { ubusd: 0.15 },
   });
 
   // a wallet can be created out of any key
   // wallets abstract transaction building
-  const wallet = bombay.wallet(mk);
+  const wallet = mcafee.wallet(mk);
 
   // create a simple message that moves coin balances
   const send = new MsgSend(
@@ -32,8 +32,8 @@ async function main() {
 	});
 
 
-  const encoded = bombay.tx.encode(tx);
-  const decoded = bombay.tx.decode(encoded);
+  const encoded = mcafee.tx.encode(tx);
+  const decoded = mcafee.tx.decode(encoded);
 
   console.log(`\n\tstringified:${JSON.stringify(tx)}`);
   console.log(`\n\tencoded:${encoded}`);

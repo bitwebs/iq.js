@@ -12,7 +12,7 @@ async function main() {
   );
 
   const columbus = new LCDClient({
-    chainID: 'columbus-5',
+    chainID: 'swartz-1',
     URL: 'https://lcd.iqchain.network',
     gasPrices,
   });

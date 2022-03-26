@@ -771,7 +771,7 @@
                 "type": "staking/MsgCreateValidator",
                 "value": {
                   "description": {
-                    "moniker": "dextrac-bombay"
+                    "moniker": "dextrac-mcafee"
                   },
                   "commission": {
                     "rate": "0.100000000000000000",

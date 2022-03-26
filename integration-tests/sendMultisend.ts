@@ -12,8 +12,8 @@ async function main() {
       'arrest word woman erupt kiss tank neck achieve diagram gadget siren rare valve replace outside angry dance possible purchase extra yellow cruise pride august',
   });
 
-  const bombay = new LCDClient({
-    chainID: 'bombay-12',
+  const mcafee = new LCDClient({
+    chainID: 'mcafee-1',
     URL: 'https://mcafee-lcd.iqchain.network',
     gasPrices: { ubusd: 0.38 },
   });
@@ -38,10 +38,10 @@ async function main() {
     ]
   );
 
-  const accInfo = await bombay.auth.accountInfo(mk.accAddress);
-  const accInfo2 = await bombay.auth.accountInfo(mk2.accAddress);
+  const accInfo = await mcafee.auth.accountInfo(mk.accAddress);
+  const accInfo2 = await mcafee.auth.accountInfo(mk2.accAddress);
 
-  const tx = await bombay.tx.create(
+  const tx = await mcafee.tx.create(
     [
       { address: mk.accAddress, sequenceNumber: accInfo.getSequenceNumber() },
       { address: mk2.accAddress, sequenceNumber: accInfo2.getSequenceNumber() },
@@ -56,7 +56,7 @@ async function main() {
 
   const sig1 = await mk.createSignatureAmino(
     new SignDoc(
-      bombay.config.chainID,
+      mcafee.config.chainID,
       accInfo.getAccountNumber(),
       accInfo.getSequenceNumber(),
       tx.auth_info,
@@ -66,7 +66,7 @@ async function main() {
 
   const sig2 = await mk2.createSignatureAmino(
     new SignDoc(
-      bombay.config.chainID,
+      mcafee.config.chainID,
       accInfo2.getAccountNumber(),
       accInfo2.getSequenceNumber(),
       tx.auth_info,
@@ -76,7 +76,7 @@ async function main() {
 
   tx.appendSignatures([sig1, sig2]);
   console.log(JSON.stringify(tx.toData()));
-  bombay.tx.broadcast(tx).then(console.log);
+  mcafee.tx.broadcast(tx).then(console.log);
 }
 
 main().catch(console.error);

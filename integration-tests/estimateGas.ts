@@ -12,13 +12,13 @@ async function main() {
 		'https://mcafee-1.iqchain.network/v1/txs/gas_prices'
 	);
 
-	const bombay = new LCDClient({
-		chainID: 'bombay-12',
+	const mcafee = new LCDClient({
+		chainID: 'mcafee-1',
 		URL: 'https://mcafee-lcd.iqchain.network',
 		gasPrices: { ubiq: gasPrices.ubiq }
 	});
 
-	const wallet = bombay.wallet(mk);
+	const wallet = mcafee.wallet(mk);
 
 	// create a simple message that moves coin balances
 	const send = new MsgSend(
@@ -34,7 +34,7 @@ async function main() {
 	});
 
 
-	const result = await bombay.tx.estimateGas(tx, {signers:[
+	const result = await mcafee.tx.estimateGas(tx, {signers:[
 		{
         sequenceNumber: await wallet.sequence(),
         publicKey: wallet.key.publicKey,

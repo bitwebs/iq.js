@@ -3,7 +3,7 @@
 describe('LCDClient', () => {
   it('runs', async () => {
     // const iq = new LCDClient({
-    //   chainID: 'columbus-5',
+    //   chainID: 'swartz-1',
     //   URL: 'https://lcd.iqchain.network',
     // });
   });

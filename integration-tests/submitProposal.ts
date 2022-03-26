@@ -8,7 +8,7 @@ import {
 } from '../src';
 
 const client = new LCDClient({
-  chainID: 'bombay-12',
+  chainID: 'mcafee-1',
   URL: 'https://mcafee-lcd.iqchain.network',
 });
 

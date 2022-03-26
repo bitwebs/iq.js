@@ -53,10 +53,10 @@ const DEFAULT_GAS_PRICES_BY_CHAIN_ID: { [key: string]: Coins.Input } = {
   default: {
     ubusd: 0.15,
   },
-  'columbus-5': {
+  'swartz-1': {
     ubusd: 0.15,
   },
-  'bombay-12': {
+  'mcafee-1': {
     ubusd: 0.15,
   },
 };
