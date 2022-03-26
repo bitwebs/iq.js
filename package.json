@@ -1,7 +1,7 @@
 {
   "name": "@web4/iq.js",
   "version": "1.0.0",
-  "description": "The JavaScript SDK for Iq",
+  "description": "The JavaScript SDK for the IQ network.",
   "license": "MIT",
   "author": "BitWeb Labs, PTE.",
   "keywords": [
