@@ -1,10 +1,7 @@
+#IQ.js
+
 <p align="center">
-The JavaScript SDK for Iq
-</p>
-
-![diagram](https://raw.githubusercontent.com/bitwebs/iq.js/master/img/iqjs-diagram.png)
-
-<br/>
+The JavaScript SDK for the IQ network.
 
 <p align="center">
   <img alt="GitHub" src="https://img.shields.io/github/license/bitwebs/iq.js">
