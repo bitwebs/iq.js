@@ -2,7 +2,7 @@ import { APIRequester } from '../APIRequester';
 import { IbcTransferAPI } from './IbcTransferAPI';
 import { DenomTrace } from '../../../core/ibc-transfer/DenomTrace';
 
-const c = new APIRequester('https://bombay-lcd.terra.dev/');
+const c = new APIRequester('https://mcafee-lcd.iqchain.network/');
 const ibctx = new IbcTransferAPI(c);
 
 describe('IbcTransferAPI', () => {

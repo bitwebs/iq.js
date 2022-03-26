@@ -2,7 +2,7 @@ import { APIRequester } from '../APIRequester';
 import { GovAPI } from './GovAPI';
 import { Coins, Dec, Int } from '../../../core';
 
-const c = new APIRequester('https://bombay-lcd.terra.dev/');
+const c = new APIRequester('https://mcafee-lcd.iqchain.network/');
 const gov = new GovAPI(c);
 
 describe('GovAPI', () => {

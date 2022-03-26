@@ -7,8 +7,8 @@ import {
   StakeAuthorization_Validators as StakeAuthorizationValidators_pb,
   authorizationTypeFromJSON,
   authorizationTypeToJSON,
-} from '@terra-money/terra.proto/cosmos/staking/v1beta1/authz';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
+} from '@web4/iq.proto/cosmos/staking/v1beta1/authz';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
 
 export class StakeAuthorization extends JSONSerializable<
   any,

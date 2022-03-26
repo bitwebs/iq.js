@@ -1,7 +1,7 @@
 import { APIRequester } from '../APIRequester';
 import { FeeGrantAPI } from './FeeGrantAPI';
 
-const c = new APIRequester('https://bombay-lcd.terra.dev/');
+const c = new APIRequester('https://mcafee-lcd.iqchain.network/');
 const feeGrant = new FeeGrantAPI(c);
 
 describe('FeeGrantAPI', () => {

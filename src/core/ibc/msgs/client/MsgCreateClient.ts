@@ -1,7 +1,7 @@
 import { JSONSerializable } from '../../../../util/json';
 import { AccAddress } from '../../../bech32';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { MsgCreateClient as MsgCreateClient_pb } from '@terra-money/terra.proto/ibc/core/client/v1/tx';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { MsgCreateClient as MsgCreateClient_pb } from '@web4/iq.proto/ibc/core/client/v1/tx';
 /**
  * MsgCreateClient defines a message to create an IBC client
  */

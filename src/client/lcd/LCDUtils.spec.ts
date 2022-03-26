@@ -5,7 +5,7 @@ import { Coin, Validator } from '../../core';
 const lcdUtils = new LCDUtils(
   new LCDClient({
     chainID: 'bombay-12',
-    URL: 'https://bombay-lcd.terra.dev',
+    URL: 'https://mcafee-lcd.iqchain.network',
   })
 );
 

@@ -1,7 +1,7 @@
 import { JSONSerializable } from '../../../util/json';
 import { Coins } from '../../Coins';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { BasicAllowance as BasicAllowance_pb } from '@terra-money/terra.proto/cosmos/feegrant/v1beta1/feegrant';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { BasicAllowance as BasicAllowance_pb } from '@web4/iq.proto/cosmos/feegrant/v1beta1/feegrant';
 
 /**
  * BasicAllowance implements Allowance with a one-time grant of tokens

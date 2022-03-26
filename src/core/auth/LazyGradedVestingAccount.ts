@@ -2,13 +2,13 @@ import { Denom } from '../Denom';
 import { JSONSerializable } from '../../util/json';
 import { BaseVestingAccount } from './BaseVestingAccount';
 import { Dec } from '../numeric';
-import { BaseVestingAccount as BaseVestingAccount_pb } from '@terra-money/terra.proto/cosmos/vesting/v1beta1/vesting';
+import { BaseVestingAccount as BaseVestingAccount_pb } from '@web4/iq.proto/cosmos/vesting/v1beta1/vesting';
 import {
   LazyGradedVestingAccount as LazyGradedVestingAccount_pb,
   Schedule as Schedule_pb,
   VestingSchedule as VestingSchedule_pb,
-} from '@terra-money/terra.proto/terra/vesting/v1beta1/vesting';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
+} from '@web4/iq.proto/terra/vesting/v1beta1/vesting';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
 import * as Long from 'long';
 import { PublicKey } from '../PublicKey';
 

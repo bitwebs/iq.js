@@ -1,6 +1,6 @@
 import { JSONSerializable } from '../../../util/json';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { CancelSoftwareUpgradeProposal as CancelSoftwareUpgradeProposal_pb } from '@terra-money/terra.proto/cosmos/upgrade/v1beta1/upgrade';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { CancelSoftwareUpgradeProposal as CancelSoftwareUpgradeProposal_pb } from '@web4/iq.proto/cosmos/upgrade/v1beta1/upgrade';
 
 /**
  *  CancelSoftwareUpgradeProposal is a gov Content type for cancelling a software upgrade

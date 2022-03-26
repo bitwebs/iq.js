@@ -6,7 +6,7 @@
 describe('Wallet', () => {
   it('sends a MsgSwap transaction', async () => {
     // const terra = new LCDClient({
-    //   URL: 'https://soju-lcd.terra.dev',
+    //   URL: 'https://mcafee-1.iqchain.network',
     //   chainID: 'soju-0014',
     // });
     // const mk = new MnemonicKey({

@@ -1,8 +1,8 @@
 import { JSONSerializable } from '../../../../util/json';
 import { AccAddress } from '../../../bech32';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
 import { Height } from '../client/Height';
-import { MsgChannelOpenAck as MsgChannelOpenAck_pb } from '@terra-money/terra.proto/ibc/core/channel/v1/tx';
+import { MsgChannelOpenAck as MsgChannelOpenAck_pb } from '@web4/iq.proto/ibc/core/channel/v1/tx';
 
 /**
  * MsgChannelOpenAck defines a msg sent by a Relayer to Chain A to acknowledge the change of channel state to TRYOPEN on Chain B.

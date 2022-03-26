@@ -2,7 +2,7 @@ import { APIRequester } from '../APIRequester';
 import { SlashingAPI } from './SlashingAPI';
 import { Dec } from '../../../core/numeric';
 
-const c = new APIRequester('https://bombay-lcd.terra.dev/');
+const c = new APIRequester('https://mcafee-lcd.iqchain.network/');
 const slashing = new SlashingAPI(c);
 
 describe('SlashingAPI', () => {

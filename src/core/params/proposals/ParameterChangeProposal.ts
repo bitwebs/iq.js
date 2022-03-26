@@ -1,7 +1,7 @@
 import { JSONSerializable } from '../../../util/json';
 import { ParamChange, ParamChanges } from '../ParamChange';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { ParameterChangeProposal as ParameterChangeProposal_pb } from '@terra-money/terra.proto/cosmos/params/v1beta1/params';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { ParameterChangeProposal as ParameterChangeProposal_pb } from '@web4/iq.proto/cosmos/params/v1beta1/params';
 
 /**
  * Describes a proposal for directly altering the value of the module parameters.
@@ -15,7 +15,7 @@ import { ParameterChangeProposal as ParameterChangeProposal_pb } from '@terra-mo
  *    Dec,
  *    MsgSubmitProposal,
  *    ParameterChangeProposal
- * } from "@terra-money/terra.js";
+ * } from "@web4/iq.js";
  *
  * const proposal = new ParameterChangeProposal("title", "description", {
  *    market: {

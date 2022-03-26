@@ -52,7 +52,7 @@ export class MnemonicKey extends RawKey {
    * ### Providing a mnemonic
    *
    * ```ts
-   * import { MnemonicKey } from 'terra.js';
+   * import { MnemonicKey } from 'iq.js';
    *
    * const mk = new MnemonicKey({ mnemonic: '...' });
    * console.log(mk.accAddress);

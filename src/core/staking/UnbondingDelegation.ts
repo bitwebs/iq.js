@@ -4,7 +4,7 @@ import { AccAddress, ValAddress } from '../bech32';
 import {
   UnbondingDelegation as UnbondingDelegation_pb,
   UnbondingDelegationEntry as UnbondingDelegationEntry_pb,
-} from '@terra-money/terra.proto/cosmos/staking/v1beta1/staking';
+} from '@web4/iq.proto/cosmos/staking/v1beta1/staking';
 import * as Long from 'long';
 
 /**

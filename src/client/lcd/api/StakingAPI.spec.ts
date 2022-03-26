@@ -8,7 +8,7 @@ import {
   UnbondingDelegation,
 } from '../../../core';
 
-const c = new APIRequester('https://bombay-lcd.terra.dev/');
+const c = new APIRequester('https://mcafee-lcd.iqchain.network/');
 const staking = new StakingAPI(c);
 
 const checkDelegations = (delegations: Delegation[]) => {

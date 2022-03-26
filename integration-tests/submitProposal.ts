@@ -9,7 +9,7 @@ import {
 
 const client = new LCDClient({
   chainID: 'bombay-12',
-  URL: 'https://bombay-lcd.terra.dev',
+  URL: 'https://mcafee-lcd.iqchain.network',
 });
 
 // LocalTerra test1 terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v

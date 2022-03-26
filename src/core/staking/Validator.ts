@@ -8,9 +8,9 @@ import {
   Commission as Commission_pb,
   CommissionRates as CommissionRates_pb,
   BondStatus,
-} from '@terra-money/terra.proto/cosmos/staking/v1beta1/staking';
+} from '@web4/iq.proto/cosmos/staking/v1beta1/staking';
 import * as Long from 'long';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
 
 /**
  * Stores information fetched from the blockchain about the current status of a validator.

@@ -1,8 +1,8 @@
 import { Coins } from '../../Coins';
 import { JSONSerializable } from '../../../util/json';
 import { AccAddress } from '../../bech32';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { MsgSend as MsgSend_pb } from '@terra-money/terra.proto/cosmos/bank/v1beta1/tx';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { MsgSend as MsgSend_pb } from '@web4/iq.proto/cosmos/bank/v1beta1/tx';
 
 /**
  * A basic message for sending [[Coins]] between Terra accounts.

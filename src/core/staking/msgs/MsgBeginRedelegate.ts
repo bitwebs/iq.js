@@ -1,8 +1,8 @@
 import { JSONSerializable } from '../../../util/json';
 import { Coin } from '../../Coin';
 import { AccAddress, ValAddress } from '../../bech32';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { MsgBeginRedelegate as MsgBeginRedelegate_pb } from '@terra-money/terra.proto/cosmos/staking/v1beta1/tx';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { MsgBeginRedelegate as MsgBeginRedelegate_pb } from '@web4/iq.proto/cosmos/staking/v1beta1/tx';
 
 /**
  * A delegator can choose to redelegate their bonded Luna and transfer a delegation

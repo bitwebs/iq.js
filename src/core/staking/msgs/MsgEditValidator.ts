@@ -2,8 +2,8 @@ import { JSONSerializable } from '../../../util/json';
 import { Dec, Int } from '../../numeric';
 import { ValAddress } from '../../bech32';
 import { Validator } from '../Validator';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { MsgEditValidator as MsgEditValidator_pb } from '@terra-money/terra.proto/cosmos/staking/v1beta1/tx';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { MsgEditValidator as MsgEditValidator_pb } from '@web4/iq.proto/cosmos/staking/v1beta1/tx';
 
 /**
  * A validator can edit its delegate information, such as moniker, website, commission

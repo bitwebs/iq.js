@@ -1,8 +1,8 @@
 import { JSONSerializable } from '../../../util/json';
 import { AccAddress } from '../../bech32';
 import { Allowance } from '../allowances';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { MsgGrantAllowance as MsgGrantAllowance_pb } from '@terra-money/terra.proto/cosmos/feegrant/v1beta1/tx';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { MsgGrantAllowance as MsgGrantAllowance_pb } from '@web4/iq.proto/cosmos/feegrant/v1beta1/tx';
 
 /**
  * MsgGrantAllowance adds permission for Grantee to spend up to Allowance

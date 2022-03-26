@@ -1,9 +1,9 @@
 import { JSONSerializable } from '../../../../util/json';
 import { AccAddress } from '../../../bech32';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
 import { Counterparty } from './Counterparty';
 import { Version } from './Version';
-import { MsgConnectionOpenInit as MsgConnectionOpenInit_pb } from '@terra-money/terra.proto/ibc/core/connection/v1/tx';
+import { MsgConnectionOpenInit as MsgConnectionOpenInit_pb } from '@web4/iq.proto/ibc/core/connection/v1/tx';
 import Long from 'long';
 
 /**

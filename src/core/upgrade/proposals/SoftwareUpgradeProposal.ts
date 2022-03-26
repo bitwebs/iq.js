@@ -1,6 +1,6 @@
 import { JSONSerializable } from '../../../util/json';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { SoftwareUpgradeProposal as SoftwareUpgradeProposal_pb } from '@terra-money/terra.proto/cosmos/upgrade/v1beta1/upgrade';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { SoftwareUpgradeProposal as SoftwareUpgradeProposal_pb } from '@web4/iq.proto/cosmos/upgrade/v1beta1/upgrade';
 import { Plan } from '../Plan';
 
 /**

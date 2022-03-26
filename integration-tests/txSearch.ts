@@ -3,7 +3,7 @@ import { LCDClient } from '../src';
 async function main() {
   const bombay = new LCDClient({
     chainID: 'bombay-12',
-    URL: 'https://bombay-lcd.terra.dev',
+    URL: 'https://mcafee-lcd.iqchain.network',
     gasPrices: { uusd: 0.38 },
   });
 

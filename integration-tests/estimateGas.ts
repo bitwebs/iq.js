@@ -9,12 +9,12 @@ async function main() {
 	});
 
 	const { data: gasPrices } = await Axios.get(
-		'https://bombay-fcd.terra.dev/v1/txs/gas_prices'
+		'https://mcafee-1.iqchain.network/v1/txs/gas_prices'
 	);
 
 	const bombay = new LCDClient({
 		chainID: 'bombay-12',
-		URL: 'https://bombay-lcd.terra.dev',
+		URL: 'https://mcafee-lcd.iqchain.network',
 		gasPrices: { uluna: gasPrices.uluna }
 	});
 
@@ -30,7 +30,7 @@ async function main() {
 	const tx = await wallet
 	.createTx({
 		msgs: [send],
-		memo: 'test from terra.js!',
+		memo: 'test from iq.js!',
 	});
 
 

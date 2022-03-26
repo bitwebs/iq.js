@@ -1,9 +1,9 @@
 import { APIRequester } from '../APIRequester';
 import { TendermintAPI } from './TendermintAPI';
 import { Tx } from '../../../core/Tx';
-import { Tx as Tx_pb } from '@terra-money/terra.proto/cosmos/tx/v1beta1/tx';
+import { Tx as Tx_pb } from '@web4/iq.proto/cosmos/tx/v1beta1/tx';
 
-const c = new APIRequester('https://bombay-lcd.terra.dev/');
+const c = new APIRequester('https://mcafee-lcd.iqchain.network/');
 const tendermint = new TendermintAPI(c);
 
 describe('TendermintAPI', () => {

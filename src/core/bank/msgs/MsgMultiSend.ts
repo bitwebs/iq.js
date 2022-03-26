@@ -1,12 +1,12 @@
 import { JSONSerializable } from '../../../util/json';
 import { Coins } from '../../Coins';
 import { AccAddress } from '../../bech32';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { MsgMultiSend as MsgMultiSend_pb } from '@terra-money/terra.proto/cosmos/bank/v1beta1/tx';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { MsgMultiSend as MsgMultiSend_pb } from '@web4/iq.proto/cosmos/bank/v1beta1/tx';
 import {
   Input as Input_pb,
   Output as Output_pb,
-} from '@terra-money/terra.proto/cosmos/bank/v1beta1/bank';
+} from '@web4/iq.proto/cosmos/bank/v1beta1/bank';
 
 /**
  * If you have multiple senders and/or multiple recipients, you can use MsgMultiSend,
@@ -19,7 +19,7 @@ import {
  * Example:
  *
  * ```ts
- * import { MsgMultiSend } from "@terra-money/terra.js";
+ * import { MsgMultiSend } from "@web4/iq.js";
  *
  * const inputs: MsgMultiSend.Input[] = [
  *    new MsgMultiSend.Input(

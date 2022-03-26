@@ -1,8 +1,8 @@
 import { JSONSerializable } from '../../../util/json';
 import { AccAddress } from '../../bech32';
 import { WeightedVoteOption } from '../Vote';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { MsgVoteWeighted as MsgVoteWeighted_pb } from '@terra-money/terra.proto/cosmos/gov/v1beta1/tx';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { MsgVoteWeighted as MsgVoteWeighted_pb } from '@web4/iq.proto/cosmos/gov/v1beta1/tx';
 import * as Long from 'long';
 
 /**

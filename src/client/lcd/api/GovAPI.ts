@@ -13,7 +13,7 @@ import {
 
 import { APIParams, Pagination, PaginationOptions } from '../APIRequester';
 import { TxSearchResult } from './TxAPI';
-import { ProposalStatus } from '@terra-money/terra.proto/cosmos/gov/v1beta1/gov';
+import { ProposalStatus } from '@web4/iq.proto/cosmos/gov/v1beta1/gov';
 
 export interface GovParams {
   /**

@@ -1,6 +1,6 @@
 import { BaseAPI } from './BaseAPI';
 import { APIParams, Pagination, PaginationOptions } from '../APIRequester';
-//import { DenomTrace } from '@terra-money/terra.proto/ibc/applications/transfer/v1/query'
+//import { DenomTrace } from '@web4/iq.proto/ibc/applications/transfer/v1/query'
 import { DenomTrace } from '../../../core/ibc-transfer/DenomTrace';
 
 export interface IbcTransferParams {

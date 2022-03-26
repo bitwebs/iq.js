@@ -1,4 +1,4 @@
-import { Height as Height_pb } from '@terra-money/terra.proto/ibc/core/client/v1/client';
+import { Height as Height_pb } from '@web4/iq.proto/ibc/core/client/v1/client';
 import * as Long from 'long';
 import { JSONSerializable } from '../../../../util/json';
 

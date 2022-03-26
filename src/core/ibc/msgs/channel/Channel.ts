@@ -2,7 +2,7 @@ import {
   State,
   Order,
   Channel as Channel_pb,
-} from '@terra-money/terra.proto/ibc/core/channel/v1/channel';
+} from '@web4/iq.proto/ibc/core/channel/v1/channel';
 import { JSONSerializable } from '../../../../util/json';
 import { Counterparty } from './Counterparty';
 

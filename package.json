@@ -1,5 +1,5 @@
 {
-  "name": "@terra-money/terra.js",
+  "name": "@web4/iq.js",
   "version": "3.0.8",
   "description": "The JavaScript SDK for Terra",
   "license": "MIT",
@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/terra-money/terra.js.git"
+    "url": "git://github.com/terra-money/iq.js.git"
   },
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -83,7 +83,7 @@
     "webpack-cli": "^4.3.0"
   },
   "dependencies": {
-    "@terra-money/terra.proto": "^0.1.7",
+    "@web4/iq.proto": "^0.1.7",
     "axios": "^0.24.0",
     "bech32": "^2.0.0",
     "bip32": "^2.0.6",

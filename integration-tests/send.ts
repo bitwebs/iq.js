@@ -1,5 +1,5 @@
 import { LCDClient, MsgSend, MnemonicKey } from '../src';
-import { SignMode } from '@terra-money/terra.proto/cosmos/tx/signing/v1beta1/signing';
+import { SignMode } from '@web4/iq.proto/cosmos/tx/signing/v1beta1/signing';
 
 async function main() {
   // create a key out of a mnemonic
@@ -10,7 +10,7 @@ async function main() {
 
   const bombay = new LCDClient({
     chainID: 'bombay-12',
-    URL: 'https://bombay-lcd.terra.dev',
+    URL: 'https://mcafee-lcd.iqchain.network',
   });
 
   // a wallet can be created out of any key
@@ -28,7 +28,7 @@ async function main() {
     .createAndSignTx({
       signMode: SignMode.SIGN_MODE_LEGACY_AMINO_JSON,
       msgs: [send],
-      memo: 'test from terra.js!',
+      memo: 'test from iq.js!',
     })
     .then(tx => {
       return bombay.tx.broadcast(tx);

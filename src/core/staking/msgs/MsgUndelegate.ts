@@ -1,8 +1,8 @@
 import { Coin } from '../../Coin';
 import { JSONSerializable } from '../../../util/json';
 import { AccAddress, ValAddress } from '../../bech32';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { MsgUndelegate as MsgUndelegate_pb } from '@terra-money/terra.proto/cosmos/staking/v1beta1/tx';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { MsgUndelegate as MsgUndelegate_pb } from '@web4/iq.proto/cosmos/staking/v1beta1/tx';
 
 /**
  * A delegator can undelegate an amount of bonded Luna, and will begin the unbonding

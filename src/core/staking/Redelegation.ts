@@ -6,7 +6,7 @@ import {
   Redelegation as Redelegation_pb,
   RedelegationEntry as RedelegationEntry_pb,
   RedelegationEntryResponse as RedelegationEntryResponse_pb,
-} from '@terra-money/terra.proto/cosmos/staking/v1beta1/staking';
+} from '@web4/iq.proto/cosmos/staking/v1beta1/staking';
 import * as Long from 'long';
 
 /**

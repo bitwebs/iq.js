@@ -2,7 +2,7 @@ import { Dec } from '../../../core/numeric';
 import { APIRequester } from '../APIRequester';
 import { MintAPI } from './MintAPI';
 
-const c = new APIRequester('https://bombay-lcd.terra.dev/');
+const c = new APIRequester('https://mcafee-lcd.iqchain.network/');
 const api = new MintAPI(c);
 
 describe('MintAPI', () => {

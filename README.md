@@ -1,19 +1,19 @@
 <p>&nbsp;</p>
 <p align="center">
-<img src="https://raw.githubusercontent.com/terra-money/terra.js/master/img/terrajs.svg" width=500>
+<img src="https://raw.githubusercontent.com/terra-money/iq.js/master/img/terrajs.svg" width=500>
 </p>
 
 <p align="center">
 The JavaScript SDK for Terra
 </p>
 
-![diagram](https://raw.githubusercontent.com/terra-money/terra.js/master/img/terrajs-diagram.png)
+![diagram](https://raw.githubusercontent.com/terra-money/iq.js/master/img/terrajs-diagram.png)
 
 <br/>
 
 <p align="center">
-  <img alt="GitHub" src="https://img.shields.io/github/license/terra-money/terra.js">
-  <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@terra-money/terra.js">
+  <img alt="GitHub" src="https://img.shields.io/github/license/terra-money/iq.js">
+  <img alt="npm (scoped)" src="https://img.shields.io/npm/v/@web4/iq.js">
 </p>
 
 <p align="center">
@@ -22,11 +22,11 @@ The JavaScript SDK for Terra
   <br/>
   <a href="https://docs.terra.money/docs/develop/sdks/terra-js/common-examples.html">Examples</a>
   ·
-  <a href="https://terra-money.github.io/terra.js/">API Reference</a>
+  <a href="https://terra-money.github.io/iq.js/">API Reference</a>
   ·
-  <a href="https://www.npmjs.com/package/@terra-money/terra.js">NPM Package</a>
+  <a href="https://www.npmjs.com/package/@web4/iq.js">NPM Package</a>
   ·
-  <a href="https://github.com/terra-money/terra.js">GitHub</a>
+  <a href="https://github.com/terra-money/iq.js">GitHub</a>
 </p>
 
 Terra.js a JavaScript SDK for writing applications that interact with the Terra blockchain from either Node.js, browser, or React Native environments and provides simple abstractions over core data structures, serialization, key management, and API request generation.
@@ -43,10 +43,10 @@ We highly suggest using Terra.js with TypeScript, or JavaScript in a code editor
 
 ## Installation
 
-Grab the latest version off [NPM](https://www.npmjs.com/package/@terra-money/terra.js):
+Grab the latest version off [NPM](https://www.npmjs.com/package/@web4/iq.js):
 
 ```sh
-npm install @terra-money/terra.js
+npm install @web4/iq.js
 ```
 
 ## Usage
@@ -56,11 +56,11 @@ Terra.js can be use in Node.js, as well as inside the browser. Please check the 
 ### Getting blockchain data
 
 ```ts
-import { LCDClient, Coin } from '@terra-money/terra.js';
+import { LCDClient, Coin } from '@web4/iq.js';
 
 // connect to bombay testnet
 const terra = new LCDClient({
-  URL: 'https://bombay-lcd.terra.dev',
+  URL: 'https://mcafee-lcd.iqchain.network',
   chainID: 'bombay-12',
 });
 
@@ -82,7 +82,7 @@ terra.market.swapRate(offerCoin, 'ukrw').then(c => {
 First, [get](https://faucet.terra.money/) some testnet tokens for `terra1x46rqay4d3cssq8gxxvqz8xt6nwlz4td20k38v`, or use [LocalTerra](https://www.github.com/terra-money/LocalTerra).
 
 ```ts
-import { LCDClient, MsgSend, MnemonicKey } from '@terra-money/terra.js';
+import { LCDClient, MsgSend, MnemonicKey } from '@web4/iq.js';
 
 // create a key out of a mnemonic
 const mk = new MnemonicKey({
@@ -92,7 +92,7 @@ const mk = new MnemonicKey({
 
 // connect to bombay testnet
 const terra = new LCDClient({
-  URL: 'https://bombay-lcd.terra.dev',
+  URL: 'https://mcafee-lcd.iqchain.network',
   chainID: 'bombay-12',
 });
 
@@ -116,7 +116,7 @@ const send = new MsgSend(
 wallet
   .createAndSignTx({
     msgs: [send],
-    memo: 'test from terra.js!',
+    memo: 'test from iq.js!',
   })
   .then(tx => terra.tx.broadcast(tx))
   .then(result => {
@@ -126,14 +126,14 @@ wallet
 
 ## Terra.js in the browser
 
-You can access all the objects of the `@terra-money/terra.js` from the global `Terra` object if you load Terra.js with a `<script>` tag.
+You can access all the objects of the `@web4/iq.js` from the global `Terra` object if you load Terra.js with a `<script>` tag.
 
 Include the following in your browser:
 
 ```html
 <script
   crossorigin
-  src="https://unpkg.com/@terra-money/terra.js/dist/bundle.js"
+  src="https://unpkg.com/@web4/iq.js/dist/bundle.js"
 ></script>
 ```
 

@@ -1,4 +1,4 @@
-import { Params as Params_pb } from '@terra-money/terra.proto/ibc/core/client/v1/client';
+import { Params as Params_pb } from '@web4/iq.proto/ibc/core/client/v1/client';
 import { JSONSerializable } from '../../../../util/json';
 
 /**

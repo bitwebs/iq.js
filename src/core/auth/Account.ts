@@ -1,4 +1,4 @@
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
 import { BaseAccount } from './BaseAccount';
 import { LazyGradedVestingAccount } from './LazyGradedVestingAccount';
 

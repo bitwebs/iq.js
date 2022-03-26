@@ -8,12 +8,12 @@ import Axios from 'axios';
 
 async function main() {
   const { data: gasPrices } = await Axios.get(
-    'https://fcd.terra.dev/v1/txs/gas_prices'
+    'https://mcafee-1.iqchain.network/v1/txs/gas_prices'
   );
 
   const columbus = new LCDClient({
     chainID: 'columbus-5',
-    URL: 'https://lcd.terra.dev',
+    URL: 'https://lcd.iqchain.network',
     gasPrices,
   });
 

@@ -15,7 +15,7 @@ import { hashToHex } from '../../../util/hash';
 import { LCDClient } from '../LCDClient';
 import { TxLog } from '../../../core';
 import { APIParams, Pagination, PaginationOptions } from '../APIRequester';
-import { BroadcastMode } from '@terra-money/terra.proto/cosmos/tx/v1beta1/service';
+import { BroadcastMode } from '@web4/iq.proto/cosmos/tx/v1beta1/service';
 
 interface Block {
   height: number;

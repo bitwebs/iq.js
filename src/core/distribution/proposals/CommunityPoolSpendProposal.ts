@@ -1,8 +1,8 @@
 import { JSONSerializable } from '../../../util/json';
 import { Coins } from '../../Coins';
 import { AccAddress } from '../../bech32';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { CommunityPoolSpendProposal as CommunityPoolSpendProposal_pb } from '@terra-money/terra.proto/cosmos/distribution/v1beta1/distribution';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { CommunityPoolSpendProposal as CommunityPoolSpendProposal_pb } from '@web4/iq.proto/cosmos/distribution/v1beta1/distribution';
 
 /**
  * Proposal that disburses funds from the Distribution module's community pool to the

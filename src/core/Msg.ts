@@ -78,7 +78,7 @@ import {
   MsgTimeoutOnClose,
   IbcChannelMsg,
 } from './ibc/msgs/channel';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
 
 export type Msg =
   | BankMsg

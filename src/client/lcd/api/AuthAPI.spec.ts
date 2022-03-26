@@ -3,8 +3,8 @@ import { AuthAPI } from './AuthAPI';
 import { BaseAccount } from '../../../core';
 import { MnemonicKey } from '../../../key';
 
-// TODO - restore to https://lcd.terra.dev
-const c = new APIRequester('https://bombay-lcd.terra.dev/');
+// TODO - restore to https://lcd.iqchain.network
+const c = new APIRequester('https://mcafee-lcd.iqchain.network/');
 const auth = new AuthAPI(c);
 
 describe('AuthAPI', () => {

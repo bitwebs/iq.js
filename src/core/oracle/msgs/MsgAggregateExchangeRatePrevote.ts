@@ -1,7 +1,7 @@
 import { JSONSerializable } from '../../../util/json';
 import { AccAddress, ValAddress } from '../../bech32';
-import { Any } from '@terra-money/terra.proto/google/protobuf/any';
-import { MsgAggregateExchangeRatePrevote as MsgAggregateExchangeRatePrevote_pb } from '@terra-money/terra.proto/terra/oracle/v1beta1/tx';
+import { Any } from '@web4/iq.proto/google/protobuf/any';
+import { MsgAggregateExchangeRatePrevote as MsgAggregateExchangeRatePrevote_pb } from '@web4/iq.proto/terra/oracle/v1beta1/tx';
 
 /**
  * Aggregate analog of MsgExchangeRatePrevote
